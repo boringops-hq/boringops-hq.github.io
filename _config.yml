@@ -1,6 +1,7 @@
 title: BoringOps
 description: Make Infrastructure Boring Again
 remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: auto
 plugins:
   - jekyll-include-cache
   - jekyll-feed
@@ -10,3 +11,7 @@ defaults:
       path: ""
     values:
       layout: single
+
+# Navigation
+navigation:
+  main: main
