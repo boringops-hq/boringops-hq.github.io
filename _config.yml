@@ -1,5 +1,6 @@
-title: BoringOps
+title: Introducing BoringOps 
 description: Make Infrastructure Boring Again
+url: "https://boringops.sh"
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: dark
 plugins:
