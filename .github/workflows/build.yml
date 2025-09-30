@@ -31,13 +31,18 @@ jobs:
         with:
           ruby-version: '3.1'
 
-      - name: Install Jekyll
+      - name: Install dependencies
         run: |
           cd site
-          gem install jekyll bundler
-          bundle init || true
-          echo 'gem "jekyll"' >> Gemfile
-          echo 'gem "jekyll-theme-minimal"' >> Gemfile
+          cat > Gemfile <<'GEMS'
+          source "https://rubygems.org"
+
+          gem "jekyll", "~> 4.3"
+          gem "minimal-mistakes-jekyll"
+          gem "jekyll-include-cache"
+          gem "jekyll-feed"
+          gem "jekyll-sitemap"
+          GEMS
           bundle install
 
       - name: Build site
