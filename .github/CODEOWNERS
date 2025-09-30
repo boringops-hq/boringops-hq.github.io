@@ -1,0 +1,10 @@
+# CODEOWNERS for boring-manifesto
+# This file tells GitHub who reviews/approves changes by default.
+
+# Make Dan the owner of everything in this repo
+*       @boringops-dan
+
+# (Optional) You can get more granular later, e.g.:
+# manifesto.md   @boringops-dan
+# LICENSE        @boringops-dan
+# README.md      @boringops-dan
