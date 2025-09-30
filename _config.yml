@@ -2,7 +2,6 @@ title: BoringOps
 description: Make Infrastructure Boring Again
 remote_theme: mmistakes/minimal-mistakes
 plugins:
-  - jekyll-include-cache
   - jekyll-feed
   - jekyll-sitemap
 defaults:
