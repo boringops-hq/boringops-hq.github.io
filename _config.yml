@@ -1,4 +1,6 @@
-title: BoringOps HQ
+title: BoringOps
 description: Make Infrastructure Boring Again
-theme: jekyll-theme-minimal
-markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+plugins: [jekyll-include-cache, jekyll-feed, jekyll-sitemap]
+defaults:
+  - scope: {path: ""} values: {layout: single}
