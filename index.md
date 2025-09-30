@@ -1,5 +1,6 @@
 ---
 title: The Boring Manifesto
+description: Shiny breaks. Boring endures.
 layout: splash
 header:
   overlay_color: "#000"
