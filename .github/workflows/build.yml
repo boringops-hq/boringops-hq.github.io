@@ -24,7 +24,7 @@ jobs:
           path: manifesto
 
       - name: Copy manifesto into site
-        run: cp manifesto/MANIFESTO.md site/_posts/MANIFESTO.md
+        run: cp manifesto/MANIFESTO.md site/MANIFESTO.md
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
