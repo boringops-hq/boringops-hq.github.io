@@ -22,7 +22,6 @@ jobs:
         with:
           repository: boringops-hq/boringops-manifesto
           path: manifesto
-          token: ${{ secrets.SITE_DISPATCH_TOKEN }}
 
       - name: Copy manifesto into site
         run: cp manifesto/MANIFESTO.md site/MANIFESTO.md
