@@ -1,8 +1,6 @@
 ---
-title: BoringOps
-description: Make Infrastructure Boring Again
-theme: jekyll-theme-minimal
-markdown: kramdown
+layout: default
+title: The Boring Manifesto
 ---
 
 # BoringOps
