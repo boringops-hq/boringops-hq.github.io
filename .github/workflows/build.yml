@@ -1,0 +1,52 @@
+name: Build and Deploy Site
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+  repository_dispatch:
+    types: [rebuild-site]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout site repo
+        uses: actions/checkout@v4
+        with:
+          path: site
+
+      - name: Checkout manifesto repo
+        uses: actions/checkout@v4
+        with:
+          repository: boringops/boringops-manifesto
+          path: manifesto
+
+      - name: Copy manifesto into site
+        run: cp manifesto/manifesto.md site/_posts/manifesto.md
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+
+      - name: Install Jekyll
+        run: |
+          cd site
+          gem install jekyll bundler
+          bundle init || true
+          echo 'gem "jekyll"' >> Gemfile
+          echo 'gem "jekyll-theme-minimal"' >> Gemfile
+          bundle install
+
+      - name: Build site
+        run: |
+          cd site
+          bundle exec jekyll build -d _site
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site/_site
