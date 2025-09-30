@@ -20,7 +20,7 @@ jobs:
       - name: Checkout manifesto repo
         uses: actions/checkout@v4
         with:
-          repository: boringops/boringops-manifesto
+          repository: boringops-hq/boringops-manifesto
           path: manifesto
 
       - name: Copy manifesto into site
