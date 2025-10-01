@@ -142,3 +142,15 @@ h3 + p,
 h3 + p + p {
   max-width: 60ch;       /* optional: keep readable line length */
 }
+
+em {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(0.5em);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+em.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
