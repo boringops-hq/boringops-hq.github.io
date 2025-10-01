@@ -13,7 +13,7 @@ header:
 
 <div class="hero fade-in">
   <p class="definition">
-    bor·ing <em>(adj.)</em> — <strong>reliably predictable;<br/> free of drama.</strong>
+    bor·ing <em>(adj.)</em> —<br/> <strong>reliably predictable;<br/> free of drama.</strong>
     <span class="underline"></span>
   </p>
 </div>
