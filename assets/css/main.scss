@@ -1,6 +1,3 @@
----
----
-
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
 $brand-color: #4caf50;   // green accent
@@ -14,15 +11,15 @@ $link-color: #81d4fa;
   font-weight: 500;
 }
 
-// Apply IBM Plex Mono everywhere
-body,
-.site-title,
-.page__title,
-h1, h2, h3, h4, h5, h6,
-p, li, a, span {
-  font-family: 'IBM Plex Mono', monospace !important;
-  letter-spacing: -0.25px;
-}
+// // Apply IBM Plex Mono everywhere
+// body,
+// .site-title,
+// .page__title,
+// h1, h2, h3, h4, h5, h6,
+// p, li, a, span {
+//   font-family: 'IBM Plex Mono', monospace !important;
+//   letter-spacing: -0.25px;
+// }
 
 body {
   line-height: 1.65;  // more vertical space
