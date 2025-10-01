@@ -14,8 +14,7 @@ header:
 This **isn’t** hype. It’s **not** disruption.  
 It’s **not** the next shiny thing.  
 
-This is about the unglamorous foundation that makes everything else possible.  
-The discipline of building systems that are **predictable**, **repeatable**, and **trusted**.  
+This is about the unglamorous foundation that makes everything else possible. The discipline of building systems that are **predictable**, **repeatable**, and **trusted**.  
 
 We call it **BoringOps**.
 
