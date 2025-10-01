@@ -9,4 +9,13 @@ header:
   caption: "bor·ing (adj.) — reliably predictable; free of drama."
 ---
 
+## What This Is
+
+This isn’t **hype**.  
+It’s not **disruption**.  
+It’s not the next **shiny thing**.  
+
+This is about the unglamorous foundation that makes everything else possible.  
+We call it **BoringOps**.
+
 {% include_relative MANIFESTO.md %}
