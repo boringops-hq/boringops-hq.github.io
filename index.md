@@ -10,11 +10,11 @@ header:
   caption: "bor·ing (adj.) — reliably predictable; free of drama."
 ---
 
-The embodiment of **calm rational technology**:
+The embodiment of **calm technology**:
 
 - A **mindset**: predictability, trust, and stability over hype.  
 - A **discipline**: consistency, standards, and stewardship.  
-- A **principal**: true innovation thrives only when the foundation is boring and solid.  
+- A **principle**: true innovation thrives only when the foundation is boring and solid.  
 
 This is the unglamorous foundation that makes everything else possible and we call it **BoringOps**.  
 
