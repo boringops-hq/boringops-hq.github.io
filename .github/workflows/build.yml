@@ -55,12 +55,6 @@ jobs:
           GEMS
           bundle install
            
-    
-
-      - name: Ensure main.scss exists
-        run: |
-          mkdir -p site/assets/css
-          touch site/assets/css/main.scss
 
       - name: Build site
         run: |
