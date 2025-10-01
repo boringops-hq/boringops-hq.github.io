@@ -10,7 +10,7 @@ header:
   caption: "bor·ing (adj.) — reliably predictable; free of drama."
 ---
 
-The embodiment of **calm technology**
+##The embodiment of **calm technology**
 
 - **Mindset**: choose predictability, trust, and stability over hype. 
 - **Discipline**: enforce consistency, standards, and stewardship.  
@@ -19,11 +19,11 @@ This is the unglamorous foundation that makes everything else possible.
 
 We call it **BoringOps**.  
 
-## The Problem With Shiny
+<!-- ## The Problem With Shiny
 Shiny breaks. Boring endures.  
 
 Innovation without stability is chaos. Stability without innovation is a graveyard.  We build the rails of progress, invisible, uncelebrated, and absolutely essential.  
 
-Boring is not the absence of ambition. It is the foundation of trust.  
+Boring is not the absence of ambition. It is the foundation of trust.   -->
 
 {% include_relative MANIFESTO.md %}
