@@ -119,15 +119,6 @@ section, article {
 /* Strong text: subtle orange underline */
 strong {
   font-weight: 700;
-  position: relative;
-}
-
-strong::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  background: var(--accent);
-  margin-top: 2px;   /* small gap from text */
-  opacity: 0.6;      /* lightly orange, not overpowering */
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 1px;  /* slight breathing room */
 }
