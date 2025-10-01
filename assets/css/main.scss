@@ -94,7 +94,16 @@ body {
 
 
 .page__hero-caption {
-  font-size: 1.5rem;       /* bump up size */
+  font-size: 1.2rem;       /* bump up size */
   font-weight: 600;        /* make it bolder */
   color: #ffffff !important;  /* white text */
+}
+
+.manifesto h2,
+.manifesto h3 {
+  margin-top: 2.5rem;   /* add more vertical space above headers */
+}
+
+.manifesto p {
+  margin-bottom: 1rem;  /* give each paragraph a little breathing room */
 }

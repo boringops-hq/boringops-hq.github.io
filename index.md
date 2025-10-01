@@ -9,6 +9,6 @@ header:
   caption: "bor·ing (adj.) — reliably predictable; free of drama."
 ---
 
-# The Sensible Revolution
-
-{% include_relative MANIFESTO.md %}
+<div class="manifesto">
+  {% include_relative MANIFESTO.md %}
+</div>
