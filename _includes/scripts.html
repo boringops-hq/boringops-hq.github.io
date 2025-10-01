@@ -14,9 +14,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(() => {
-    document.querySelector(".site-header").classList.add("visible");
-  }, 1500); // 1.5s after hero loads
+  const faders = document.querySelectorAll(".fade-in");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+
+        // if this is the definition, chain the header reveal
+        if (entry.target.classList.contains("definition")) {
+          // underline animation ~1.2s, wait +3s
+          setTimeout(() => {
+            document.querySelector(".site-header").classList.add("visible");
+          }, 4200);
+        }
+      }
+    });
+  }, { threshold: 0.1 });
+
+  faders.forEach(el => observer.observe(el));
 });
 </script>
+
 
