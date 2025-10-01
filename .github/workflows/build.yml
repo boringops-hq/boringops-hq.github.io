@@ -16,12 +16,16 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: site
+          clean: true
+          fetch-depth: 0
+          
 
       - name: Checkout manifesto repo
         uses: actions/checkout@v4
         with:
           repository: boringops-hq/boringops-manifesto
           path: manifesto
+          
 
       - name: Copy manifesto into site
         run: cp manifesto/MANIFESTO.md site/MANIFESTO.md
