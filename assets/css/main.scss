@@ -120,7 +120,7 @@ section, article {
 strong {
   font-weight: 700;
   display: inline;
-  background-image: linear-gradient(#411b0e, #411b0e);
+  background-image: linear-gradient(#642a16, #642a16);
   background-repeat: no-repeat;
   background-position: center bottom; /* anchor underline in center */
   background-size: 80% 2px;           /* only 80% of text width */
@@ -142,16 +142,15 @@ h3 + p,
 h3 + p + p {
   max-width: 60ch;       /* optional: keep readable line length */
 }
-
 em {
-  display: inline-block;          /* allow transform */
-  opacity: 0;
-  transform: translateY(0.75em);  /* start lower */
-  transition: opacity 2s ease, transform 2s ease;
-  will-change: opacity, transform;
+    display: inline-block;          /* allow transform */
+    opacity: 0;
+    transform: translateY(0.75em);  /* start lower */
+    transition: opacity 2s ease, transform 2s ease;
+    will-change: opacity, transform;
 }
 
 em.reveal {                       /* gets applied via JS */
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
