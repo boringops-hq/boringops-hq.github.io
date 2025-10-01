@@ -125,7 +125,10 @@ strong {
   background-position: center bottom; /* anchor underline in center */
   background-size: 80% 2px;           /* only 80% of text width */
   padding-bottom: 2px;
-  margin-bottom: 3em;
+}
+
+blockquote {
+    margin-bottom: 4em;
 }
 
 .page__content p {
