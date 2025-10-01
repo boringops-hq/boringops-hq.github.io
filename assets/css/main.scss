@@ -118,7 +118,8 @@ section, article {
 
 /* Strong text: subtle orange underline */
 strong {
+  margin-top: 2em;
   font-weight: 700;
-  border-bottom: 2px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
   padding-bottom: 1px;  /* slight breathing room */
 }
