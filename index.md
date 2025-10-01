@@ -2,6 +2,7 @@
 title: "A Sensible Revolution"
 description: Shiny breaks. Boring endures.
 layout: splash
+share: true
 header:
   overlay_filter: 0.7
   overlay_color: "#000000"
