@@ -1,5 +1,5 @@
 ---
-title: Introducing BoringOps
+title: The BoringOps Movement
 description: Shiny breaks. Boring endures.
 
 layout: splash
