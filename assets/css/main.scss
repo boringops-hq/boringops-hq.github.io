@@ -1,17 +1,52 @@
 ---
+# Required front matter so Jekyll processes this file
 ---
 
-/* Load Minimal Mistakes skin (choose: default, dark, auto, etc.) */
-@import "minimal-mistakes/skins/dark";
+@import "minimal-mistakes/skins/dark"; // pick a skin (dark, air, neon, etc.)
+@import "minimal-mistakes";            // base theme
 
-/* Load the full Minimal Mistakes theme */
-@import "minimal-mistakes";
+// --- boring but cool overrides ---
 
-/* Your font overrides */
-body, p, li, a, span {
-    font-family: 'IBM Plex Mono', monospace;
+$brand-color: #ff6600; // accent (safety orange)
+$font-stack: 'IBM Plex Mono', monospace;
+
+// Global
+body {
+  font-family: $font-stack;
+  letter-spacing: -0.25px;
+  background-color: #111;
+  color: #eaeaea;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'IBM Plex Mono', monospace;
+// Hero section
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1.5rem;
+    color: #aaa;
+  }
+}
+
+// Section wrapper
+.section {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+// Fade-in animation
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

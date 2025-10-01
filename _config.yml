@@ -13,8 +13,9 @@ defaults:
     values:
       layout: single
 
+
+copyright: "© 2025 BoringOps. This space intentionally left boring."
 minimal_mistakes_footer: false
-copyright: "© 2025 BoringOps. All rights reserved."
 
 # Navigation
 navigation:
