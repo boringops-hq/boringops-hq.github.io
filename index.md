@@ -12,8 +12,6 @@ header:
 ---
 
 <div class="hero fade-in">
-  <h1>BORINGOPS.SH</h1>
-  <p>Make Infrastructure Boring Again</p>
   <p class="definition">bor·ing <em>(adj.)</em> — <strong>reliably predictable; free of drama.</strong></p>
 </div>
 
