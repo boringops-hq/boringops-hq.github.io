@@ -12,6 +12,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+      - name: delete old site folder
+        run: |
+          rm -rf site
+
+
       - name: Checkout site repo
         uses: actions/checkout@v4
         with:
