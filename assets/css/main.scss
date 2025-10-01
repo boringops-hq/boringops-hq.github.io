@@ -126,3 +126,12 @@ strong {
   background-size: 80% 2px;           /* only 80% of text width */
   padding-bottom: 2px;
 }
+
+/* Indent text under numbered headings */
+h2 + p,
+h2 + p + p,
+h3 + p,
+h3 + p + p {
+  margin-left: 1.5rem;   /* indent */
+  max-width: 65ch;       /* optional: keep readable line length */
+}
