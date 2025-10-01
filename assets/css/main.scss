@@ -7,11 +7,6 @@ $brand-color: #4caf50;   // green accent
 $body-color: #e0e0e0;
 $link-color: #81d4fa;
 
-
-@import "minimal-mistakes/skins/auto"; // or auto, or another skin
-@import "minimal-mistakes";            // pulls in the base theme
-
-
 // your overrides
 .page__hero-caption {
   color: #ffffff !important;   // make it brighter
