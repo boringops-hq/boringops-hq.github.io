@@ -18,7 +18,7 @@ jobs:
           path: site
           clean: true
           fetch-depth: 0
-          
+
 
       - name: Checkout manifesto repo
         uses: actions/checkout@v4
@@ -48,10 +48,13 @@ jobs:
           gem "jekyll-sitemap"
           GEMS
           bundle install
+           
+    
 
       - name: Build site
         run: |
           cd site
+          bundle exec jekyll clean
           bundle exec jekyll build -d ../_site
 
       - name: Upload artifact
