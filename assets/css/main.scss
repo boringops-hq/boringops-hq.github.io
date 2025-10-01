@@ -27,25 +27,34 @@ body {
   text-align: center;
   display: inline-block;
   margin: 4rem auto 0;
-  padding-bottom: 0.4rem;
   position: relative;
-
-  &::after {
-    content: "";
-    display: block;
-    width: 0;  // start collapsed
-    height: 3px;
-    background: $brand-color;
-    margin: 0.8rem auto 0;
-    border-radius: 2px;
-    transition: width 2.5s ease-out;
-  }
 }
 
-/* when the fade-in wrapper becomes visible */
-.fade-in.visible .definition::after {
-  width:80%;
+.definition .underline {
+  display: block;
+  width: 0;
+  height: 3px;
+  background: $brand-color; // your orange
+  margin: 0.8rem auto 0;
+  border-radius: 2px;
+  transition: width 1.2s ease-out;
 }
+
+.fade-in.visible .definition .underline {
+  width: 60%;
+}
+
+.site-header {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.site-header.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 // Hero section
 .hero {
@@ -79,15 +88,3 @@ body {
     transform: translateY(0);
   }
 }
-
-.site-header {
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.site-header.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-

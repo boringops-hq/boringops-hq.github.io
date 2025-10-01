@@ -12,8 +12,12 @@ header:
 ---
 
 <div class="hero fade-in">
-  <p class="definition">bor·ing <em>(adj.)</em> — <strong>reliably predictable; free of drama.</strong></p>
+  <p class="definition">
+    bor·ing <em>(adj.)</em> — <strong>reliably predictable; free of drama.</strong>
+    <span class="underline"></span>
+  </p>
 </div>
+
 
 {% include_relative MANIFESTO.md %}
 

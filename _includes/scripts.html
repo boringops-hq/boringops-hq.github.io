@@ -20,17 +20,16 @@ document.addEventListener("DOMContentLoaded", () => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
 
-        // specifically for the definition
+        // Only act when definition enters
         if (entry.target.classList.contains("definition")) {
-          const def = entry.target;
-          const afterAnim = () => {
-            // wait 3s AFTER the underline animation completes
+          const underline = entry.target.querySelector(".underline");
+
+          // Listen once for underline animation to finish
+          underline.addEventListener("transitionend", () => {
             setTimeout(() => {
               document.querySelector(".site-header").classList.add("visible");
-            }, 3000);
-            def.removeEventListener("transitionend", afterAnim);
-          };
-          def.addEventListener("transitionend", afterAnim);
+            }, 3000); // 3s AFTER underline completes
+          }, { once: true });
         }
       }
     });
