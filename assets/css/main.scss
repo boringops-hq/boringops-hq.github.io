@@ -38,13 +38,13 @@ body {
     background: $brand-color;
     margin: 0.8rem auto 0;
     border-radius: 2px;
-    transition: width 1.2s ease-out;
+    transition: width 2.5s ease-out;
   }
 }
 
 /* when the fade-in wrapper becomes visible */
 .fade-in.visible .definition::after {
-  width: 60%;
+  width:80%;
 }
 
 // Hero section
