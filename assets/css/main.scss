@@ -2,6 +2,8 @@ $brand-color: #4caf50;   // green accent
 $body-color: #e0e0e0;
 $link-color: #81d4fa;
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
 @import "minimal-mistakes/skins/auto"; // or auto, or another skin
 @import "minimal-mistakes";            // pulls in the base theme
 
