@@ -4,7 +4,7 @@ url: "https://boringops.sh"
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: auto
 plugins:
-  # - jekyll-include-cache
+  - jekyll-include-cache
   - jekyll-feed
   - jekyll-sitemap
 defaults:
@@ -12,6 +12,9 @@ defaults:
       path: ""
     values:
       layout: single
+
+sass:
+  style: compressed
 
 minimal_mistakes_footer: false
 copyright: "© 2025 BoringOps. All rights reserved."
