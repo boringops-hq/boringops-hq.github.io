@@ -99,6 +99,18 @@ body {
   color: #ffffff !important;  /* white text */
 }
 
-h2,h3 {
-  margin-top: 2.5rem;   /* add more vertical space above headers */
+.page__content h2 {
+  margin-top: 3.5rem;   /* big gap above major sections */
+  margin-bottom: 1.5rem;
 }
+
+.page__content h3 {
+  margin-top: 2rem;     /* smaller gap above sub-sections */
+  margin-bottom: 1rem;
+}
+
+.page__content p {
+  margin-bottom: 1rem;  /* even space between paragraphs */
+  line-height: 1.6;     /* easier to read */
+}
+
