@@ -10,7 +10,7 @@ header:
   caption: "bor·ing (adj.) — reliably predictable; free of drama."
 ---
 
-It is the **The embodiment of calm technology**:
+It is the **embodiment of calm rational technology**:
 
 - **A mindset**: predictability, trust, and stability over hype.  
 - **A discipline**: consistency, standards, and stewardship.  
