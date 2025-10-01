@@ -20,12 +20,17 @@ document.addEventListener("DOMContentLoaded", () => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
 
-        // if this is the definition, chain the header reveal
+        // specifically for the definition
         if (entry.target.classList.contains("definition")) {
-          // underline animation ~1.2s, wait +3s
-          setTimeout(() => {
-            document.querySelector(".site-header").classList.add("visible");
-          }, 4200);
+          const def = entry.target;
+          const afterAnim = () => {
+            // wait 3s AFTER the underline animation completes
+            setTimeout(() => {
+              document.querySelector(".site-header").classList.add("visible");
+            }, 3000);
+            def.removeEventListener("transitionend", afterAnim);
+          };
+          def.addEventListener("transitionend", afterAnim);
         }
       }
     });
@@ -34,5 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
   faders.forEach(el => observer.observe(el));
 });
 </script>
+
 
 
