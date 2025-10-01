@@ -24,25 +24,25 @@ body {
   font-style: italic;
   text-align: center;
   display: inline-block;
-  margin: 4rem auto 0;  // push it down a bit
+  margin: 4rem auto 0;
   padding-bottom: 0.4rem;
   position: relative;
 
   &::after {
     content: "";
     display: block;
-    width: 0; // start collapsed for animation
+    width: 0;  // start collapsed
     height: 3px;
-    background: $brand-color; // your accent, e.g. safety orange
+    background: $brand-color;
     margin: 0.8rem auto 0;
     border-radius: 2px;
     transition: width 1.2s ease-out;
   }
 }
 
-// when fade-in observer adds `.visible`
-.definition.visible::after {
-  width: 60%; // underline grows to 60% of text width
+/* when the fade-in wrapper becomes visible */
+.fade-in.visible .definition::after {
+  width: 60%;
 }
 
 
