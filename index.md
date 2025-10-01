@@ -5,7 +5,7 @@ layout: splash
 header:
   overlay_filter: 0.8
   overlay_color: "#000000ff"
-  overlay_image: /assets/images/industrial.png
+  overlay_image: /assets/images/header.png
   caption: "bor·ing *(adj.)* — **reliably predictable; free of drama.**"
 ---
 
