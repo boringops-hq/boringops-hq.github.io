@@ -91,3 +91,10 @@ body {
 //     transform: translateY(0);
 //   }
 // }
+
+
+.page__hero-caption {
+  font-size: 1.5rem;       /* bump up size */
+  font-weight: 600;        /* make it bolder */
+  color: #ffffff !important;  /* white text */
+}
