@@ -10,6 +10,20 @@
 $brand-color: #ff6600; // accent (safety orange)
 $font-stack: 'IBM Plex Mono', monospace;
 
+/* normalize nav link colors */
+.site-nav a,
+.site-nav a:visited,
+.site-nav a:hover,
+.site-nav a:active {
+  color: #eaeaea; // or whatever neutral you want
+  text-decoration: none;
+}
+
+/* optional hover effect */
+.site-nav a:hover {
+  color: $brand-color; // your orange
+}
+
 // Global
 body {
   font-family: $font-stack;
@@ -41,7 +55,7 @@ body {
 }
 
 .fade-in.visible .definition .underline {
-  width: 60%;
+  width: 40%;
 }
 
 
