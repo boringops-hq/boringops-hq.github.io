@@ -16,3 +16,17 @@ defaults:
 # Navigation
 navigation:
   main: main
+seo:
+  type: "website"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/boringops-hq/boringops-manifesto"
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-N31L1R3FES"
+    anonymize_ip: true
