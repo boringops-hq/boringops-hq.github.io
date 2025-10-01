@@ -2,7 +2,6 @@
 title: Introducing BoringOps
 description: Shiny breaks. Boring endures.
 
-
 layout: splash
 header:
   overlay_filter: 0.8
