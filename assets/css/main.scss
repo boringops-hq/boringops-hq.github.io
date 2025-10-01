@@ -11,3 +11,22 @@ $link-color: #81d4fa;
   font-size: 1.2em;
   font-weight: 500;
 }
+
+// Apply IBM Plex Mono everywhere
+body,
+.site-title,
+.page__title,
+h1, h2, h3, h4, h5, h6,
+p, li, a, span {
+  font-family: 'IBM Plex Mono', monospace !important;
+  letter-spacing: -0.25px;
+}
+
+body {
+  line-height: 1.65;  // more vertical space
+  font-size: 16px;    // keep base readable
+}
+
+em {
+  font-style: italic;
+}
