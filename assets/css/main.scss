@@ -1,0 +1,17 @@
+---
+---
+
+/* Load Minimal Mistakes skin (choose: default, dark, auto, etc.) */
+@import "minimal-mistakes/skins/dark";
+
+/* Load the full Minimal Mistakes theme */
+@import "minimal-mistakes";
+
+/* Your font overrides */
+body, p, li, a, span {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Mono', monospace;
+}
