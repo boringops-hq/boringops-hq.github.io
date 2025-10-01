@@ -27,11 +27,10 @@ body {
 
 /* Define a boring but modern palette */
 :root {
-  --bg: #1a1a1a;
   --fg: #e6e6e6;
   --muted: #9ca3af;
-  --accent: #60a5fa; /* soft blue accent */
-  --accent-strong: #3b82f6;
+  --accent: #f59e0b;       /* soft amber/orange */
+  --accent-strong: #ea580c; /* stronger burnt orange */
   --font-heading: "IBM Plex Sans", system-ui, sans-serif;
   --font-body: "IBM Plex Mono", monospace;
 }
