@@ -4,17 +4,12 @@ document.addEventListener("DOMContentLoaded", function() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
+        entry.target.classList.add("reveal");
         observer.unobserve(entry.target); // only trigger once
       }
     });
-  }, { threshold: 0.2 });
+  }, { threshold: 0.25 });
 
   elements.forEach(el => observer.observe(el));
 });
 </script>
-
-
-
-
-
