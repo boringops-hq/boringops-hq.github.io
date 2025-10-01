@@ -13,6 +13,8 @@ defaults:
     values:
       layout: single
 
+copyright: "© 2025 BoringOps. All rights reserved."
+
 # Navigation
 navigation:
   main: main
@@ -24,6 +26,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/boringops-hq/boringops-manifesto"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:hello@boringops.sh"
 
 analytics:
   provider: "google-gtag"

@@ -1,11 +1,11 @@
 ---
-title: The Boring Manifesto
+title: Introducing BoringOps
 description: Shiny breaks. Boring endures.
 layout: splash
 header:
-  overlay_color: "#000"
-  overlay_filter: 0.4
-  overlay_image: /assets/images/industrial.jpg
+  overlay_filter: 0.5
+  overlay_color: "#333"
+  overlay_image: /assets/images/industrial.png
   caption: "bor·ing *(adj.)* — **reliably predictable; free of drama.**"
 ---
 
