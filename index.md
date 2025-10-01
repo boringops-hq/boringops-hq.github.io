@@ -1,5 +1,5 @@
 ---
-title: The BoringOps Movement
+title: Join the Sensible Revolution
 description: Shiny breaks. Boring endures.
 
 layout: splash
@@ -7,11 +7,11 @@ header:
   overlay_filter: 0.8
   overlay_color: "#000000ff"
   overlay_image: /assets/images/header.png
-  caption: "bor·ing *(adj.)* — **reliably predictable; free of drama.**"
+  caption: "Because uptime is sexier than chaos."
   subtitle: "Make Infrastructure Boring Again"
 ---
 
-Because uptime is sexier than chaos.
+bor·ing *(adj.)* — **reliably predictable; free of drama.**
 
 {% include_relative MANIFESTO.md %}
 
