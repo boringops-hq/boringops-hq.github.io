@@ -1,0 +1,17 @@
+<div class="page__footer">
+  <footer>
+    {% include footer/custom.html %}
+    
+    {% if site.footer.links %}
+    <div class="page__footer-follow">
+      <ul class="social-icons">
+        {% for link in site.footer.links %}
+          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    <div class="page__footer-copyright">{{ site.footer.content }}</div>
+  </footer>
+</div>

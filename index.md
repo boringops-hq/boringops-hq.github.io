@@ -1,5 +1,5 @@
 ---
-title: "The Sensible Revolution"
+title: "A Sensible Revolution"
 description: Shiny breaks. Boring endures.
 layout: splash
 header:
