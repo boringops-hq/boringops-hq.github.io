@@ -11,3 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
   faders.forEach(el => observer.observe(el));
 });
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    document.querySelector(".site-header").classList.add("visible");
+  }, 1500); // 1.5s after hero loads
+});
+</script>
+

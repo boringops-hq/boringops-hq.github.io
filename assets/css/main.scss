@@ -18,6 +18,8 @@ body {
   color: #eaeaea;
 }
 
+//Underline on "boring" definition
+
 .definition {
   font-size: 1.6rem;
   color: #ccc;
@@ -44,7 +46,6 @@ body {
 .fade-in.visible .definition::after {
   width: 60%;
 }
-
 
 // Hero section
 .hero {
@@ -78,3 +79,15 @@ body {
     transform: translateY(0);
   }
 }
+
+.site-header {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.site-header.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
