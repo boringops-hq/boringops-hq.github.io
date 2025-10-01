@@ -28,69 +28,7 @@ $font-stack: 'IBM Plex Mono', monospace;
 body {
   font-family: $font-stack;
   letter-spacing: -0.25px;
-//   background-color: #111;
-//   color: #eaeaea;
 }
-
-// //Underline on "boring" definition
-
-// .definition {
-//   font-size: 1.6rem;
-//   color: #ccc;
-//   font-style: italic;
-//   text-align: center;
-//   display: inline-block;
-//   margin: 4rem auto 0;
-//   position: relative;
-// }
-
-// .definition .underline {
-//   display: block;
-//   width: 0;
-//   height: 3px;
-//   background: $brand-color; // your orange
-//   margin: 0.8rem auto 0;
-//   border-radius: 2px;
-//   transition: width 1.2s ease-out;
-// }
-
-// .fade-in.visible .definition .underline {
-//   width: 40%;
-// }
-
-
-// Hero section
-.hero {
-  text-align: center;
-  padding: 6rem 2rem;
-  h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-  }
-  p {
-    font-size: 1.5rem;
-    color: #aaa;
-  }
-}
-
-// Section wrapper
-.section {
-  max-width: 700px;
-  margin: 4rem auto;
-  padding: 1rem;
-  text-align: center;
-}
-
-// // Fade-in animation
-// .fade-in {
-//   opacity: 0;
-//   transform: translateY(20px);
-//   transition: opacity 1.2s ease-out, transform 1.2s ease-out;
-//   &.visible {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// }
 
 
 .page__hero-caption {

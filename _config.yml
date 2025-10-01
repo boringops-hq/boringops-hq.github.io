@@ -13,10 +13,6 @@ defaults:
     values:
       layout: single
 
-
-copyright: "© 2025 BoringOps. This space intentionally left boring."
-minimal_mistakes_footer: false
-
 # Navigation
 navigation:
   main: main
@@ -24,6 +20,7 @@ seo:
   type: "website"
 
 footer:
+  content: "© 2025 BoringOps. This space intentionally left boring."
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
