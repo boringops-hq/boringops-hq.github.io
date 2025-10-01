@@ -13,9 +13,6 @@ defaults:
     values:
       layout: single
 
-sass:
-  style: compressed
-
 minimal_mistakes_footer: false
 copyright: "© 2025 BoringOps. All rights reserved."
 
