@@ -127,11 +127,14 @@ strong {
   padding-bottom: 2px;
 }
 
+.page__content p {
+    margin: 0 0 1.3em 5em;
+}
+
 /* Indent text under numbered headings */
 h2 + p,
 h2 + p + p,
 h3 + p,
 h3 + p + p {
-  margin-left: 1.5rem;   /* indent */
-  max-width: 65ch;       /* optional: keep readable line length */
+  max-width: 60ch;       /* optional: keep readable line length */
 }
