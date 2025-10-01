@@ -12,32 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const faders = document.querySelectorAll(".fade-in");
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-
-        // Only act when definition enters
-        if (entry.target.classList.contains("definition")) {
-          const underline = entry.target.querySelector(".underline");
-
-          // Listen once for underline animation to finish
-          underline.addEventListener("transitionend", () => {
-            setTimeout(() => {
-              document.querySelector(".site-header").classList.add("visible");
-            }, 3000); // 3s AFTER underline completes
-          }, { once: true });
-        }
-      }
-    });
-  }, { threshold: 0.1 });
-
-  faders.forEach(el => observer.observe(el));
-});
-</script>
 
 
 
