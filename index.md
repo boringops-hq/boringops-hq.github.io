@@ -17,7 +17,7 @@ Bringing order into a noisy world through:
 - **Discipline**: Enforce consistency, standards, and stewardship.  
 - **Principle**: Recognize that innovation thrives when the foundation is solid.
 
-This is the unglamorous ground that makes everything else possible.
+This is the steady ground that makes progress possible.
 
 We call it **BoringOps**.  
 
