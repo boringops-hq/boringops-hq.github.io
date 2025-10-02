@@ -21,6 +21,8 @@ This is the unglamorous foundation that makes everything else possible.
 
 We call it **BoringOps**.  
 
+<p/>
+
 <!-- ## The Problem With Shiny
 Shiny breaks. Boring endures.  
 
