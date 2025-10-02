@@ -34,7 +34,7 @@ jobs:
           
 
       - name: Copy manifesto into site
-        run: cp manifesto/MANIFESTO.md site/MANIFESTO.md
+        run: cp manifesto/MANIFESTO.md site/_includes/MANIFESTO.md
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
