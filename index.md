@@ -13,9 +13,9 @@ header:
 ## The embodiment of calm technology
 
 Introducing calm into the noisy world of DevOps.  
-- **Mindset**: choose predictability, trust, and stability over hype. 
-- **Discipline**: enforce consistency, standards, and stewardship.  
-- **Principle**: recognize innovation thrives when the foundation is solid.
+- **Mindset**: Choose predictability, trust, and stability over hype. 
+- **Discipline**: Enforce consistency, standards, and stewardship.  
+- **Principle**: Recognize innovation thrives when the foundation is solid.
 
 This is the unglamorous foundation that makes everything else possible.
 
