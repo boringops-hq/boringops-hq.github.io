@@ -12,12 +12,12 @@ header:
 
 ## The embodiment of calm technology
 
-Introducing order into the noisy world of change.  
+Introducing order into a noisy world through:
 - **Mindset**: Choose predictability, trust, and stability over hype. 
 - **Discipline**: Enforce consistency, standards, and stewardship.  
-- **Principle**: Recognize innovation thrives when the foundation is solid.
+- **Principle**: Recognize that innovation thrives when the foundation is solid.
 
-This is the unglamorous foundation that makes everything else possible.
+This is the unglamorous ground that makes everything else possible.
 
 We call it **BoringOps**.  
 
