@@ -17,7 +17,7 @@ Introducing calm into the noisy world of DevOps.
 - **Discipline**: Enforce consistency, standards, and stewardship.  
 - **Principle**: Recognize innovation thrives when the foundation is solid.
 
-**This is the unglamorous foundation that makes everything else possible**.
+This is the unglamorous foundation that makes everything else possible.
 
 We call it **BoringOps**.  
 
