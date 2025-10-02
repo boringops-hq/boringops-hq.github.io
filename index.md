@@ -12,7 +12,7 @@ header:
 
 ## The embodiment of calm technology
 
-Introducing order into a noisy world through:
+Bringing order into a noisy world through:
 - **Mindset**: Choose predictability, trust, and stability over hype. 
 - **Discipline**: Enforce consistency, standards, and stewardship.  
 - **Principle**: Recognize that innovation thrives when the foundation is solid.
