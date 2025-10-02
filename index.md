@@ -30,4 +30,4 @@ Innovation without stability is chaos. Stability without innovation is a graveya
 
 Boring is not the absence of ambition. It is the foundation of trust.   -->
 
-{% include_relative MANIFESTO.md %}
+{% include MANIFESTO.md %}
