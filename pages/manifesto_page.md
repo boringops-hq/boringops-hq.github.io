@@ -3,7 +3,7 @@ title: "The Manifesto"
 description: Shiny breaks. Boring endures.
 layout: single
 share: true
-permalink : /manifesto
+permalink : /manifesto/
 header:
   overlay_filter: 0.7
   overlay_color: "#000000"
