@@ -42,7 +42,7 @@ jobs:
         run: cp manifesto/MANIFESTO.md site/_includes/MANIFESTO.md
 
       - name: Copy pages into site
-        run: cp pages/*.md site/pages/
+        run: cp articles/*.md site/pages/
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
