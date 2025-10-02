@@ -15,7 +15,8 @@ header:
 Introducing calm into the noisy world of DevOps.  
 - **Mindset**: choose predictability, trust, and stability over hype. 
 - **Discipline**: enforce consistency, standards, and stewardship.  
-- **Principle**: innovation thrives only when the foundation is boring and solid.
+- **Principle**: recognize innovation thrives when the foundation is solid.
+
 This is the unglamorous foundation that makes everything else possible.
 
 We call it **BoringOps**.  
