@@ -12,7 +12,7 @@ header:
 
 ## The embodiment of calm technology
 
-Introducing order into the noisy world of DevOps.  
+Introducing order into the noisy world of change.  
 - **Mindset**: Choose predictability, trust, and stability over hype. 
 - **Discipline**: Enforce consistency, standards, and stewardship.  
 - **Principle**: Recognize innovation thrives when the foundation is solid.
