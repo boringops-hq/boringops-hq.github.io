@@ -16,9 +16,9 @@ Introducing calm into the noisy world of DevOps.
 - **Mindset**: Choose predictability, trust, and stability over hype. 
 - **Discipline**: Enforce consistency, standards, and stewardship.  
 - **Principle**: Recognize innovation thrives when the foundation is solid.
-<br/>
+
 **This is the unglamorous foundation that makes everything else possible**.
-<br/>
+
 We call it **BoringOps**.  
 
 <!-- ## The Problem With Shiny
