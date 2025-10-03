@@ -1,5 +1,5 @@
 ---
-title: "A Sensible Revolution"
+title: "A Sensible Standard"
 description: Shiny breaks. Boring endures.
 layout: splash
 share: true
@@ -17,7 +17,7 @@ Bringing order into a noisy world through:
 - **Discipline**: Enforce consistency, standards, and stewardship.  
 - **Principle**: Recognize that innovation thrives when the foundation is solid.
 
-This is the steady ground that makes progress possible.
+This is the ground progress is built on.
 
 We call it **BoringOps**.  
 
