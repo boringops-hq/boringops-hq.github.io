@@ -39,3 +39,21 @@ Innovation without stability is chaos. Stability without innovation is a graveya
 Boring is not the absence of ambition. It is the foundation of trust.   -->
 
 {% include MANIFESTO.md %}
+
+## Signs You’ve Achieved Boring
+- Deploys don’t need an audience.  
+- Incidents are rare, uneventful, and easy to explain.  
+- New hires can ship in days, not months.  
+- Nobody panics about scaling.  
+- Finance complains about your bill (less).  
+- Customers never think about your infra.  
+- You forget it’s even there, until you need it, and it works.  
+
+## The Closing Charge
+We don’t worship boredom because it is dull.  
+
+We choose boredom because it is freedom: freedom from **chaos**, freedom from **heroics**, freedom to **build the things that matter**.  
+
+Boring isn’t the enemy of progress.  
+
+**Boring is the ground it stands on**.  
