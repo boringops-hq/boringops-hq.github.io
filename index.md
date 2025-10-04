@@ -28,7 +28,7 @@ Infra isn’t supposed to be exciting. Excitement means outages, drama, and late
 Boring is **predictable**. Boring is **stable**. 
 Boring is the soil innovation grows in.
 
-BoringOps is the discipline of making systems so dull they<br/> 
+BoringOps is the discipline of making systems so dull they
 disappear, freeing teams to build what matters.
 
 <p/>
