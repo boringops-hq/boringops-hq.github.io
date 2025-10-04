@@ -1,5 +1,5 @@
 ---
-title: ""
+title: " "
 description: Shiny breaks. Boring endures.
 layout: splash
 share: true
