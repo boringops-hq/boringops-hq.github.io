@@ -31,8 +31,6 @@ Boring is the soil innovation grows in.
 BoringOps is the discipline of making systems so dull they
 disappear, freeing teams to build what matters.
 
-<p/>
-
 <!-- ## The Problem With Shiny
 Shiny breaks. Boring endures.  
 
