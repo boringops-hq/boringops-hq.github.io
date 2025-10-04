@@ -1,6 +1,4 @@
 main:
-  - title: "Manifesto"
-    url: /manifesto/
   - title: "Articles"
     url: /articles/
   - title: "About"
