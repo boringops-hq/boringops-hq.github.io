@@ -10,7 +10,7 @@ header:
   caption: "bor·ing (adj.) — reliably predictable; free of drama."
 ---
 
-## The embodiment of calm technology
+<!-- ## The embodiment of calm technology
 
 Bringing order into a noisy world through:
 - **Mindset**: Choose predictability, trust, and stability over hype. 
@@ -19,7 +19,14 @@ Bringing order into a noisy world through:
 
 This is the ground progress is built on.
 
-We call it **BoringOps**.  
+We call it **BoringOps**.   -->
+
+## Why BoringOps
+
+Infra isn’t supposed to be exciting. Excitement means outages, drama, and late-night calls.
+Boring is predictable. Boring is stable. Boring is the soil innovation grows in.
+
+That’s what BoringOps is: the discipline of making systems so dull they disappear, leaving teams free to build what matters.
 
 <p/>
 
