@@ -13,6 +13,11 @@ defaults:
     values:
       layout: single
 
+collections:
+  articles:
+    output: true
+    permalink: /articles/:title/
+
 # Navigation
 navigation:
   main: main
