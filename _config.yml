@@ -7,12 +7,20 @@ plugins:
   - jekyll-include-cache
   - jekyll-feed
   - jekyll-sitemap
-  
+
 defaults:
   - scope:
       path: ""
     values:
       layout: single
+  - scope:
+      path: ""
+      type: articles
+    values:
+      layout: single
+      show_excerpts: true
+      author_profile: false
+      teaser: /assets/images/sensible_header.png
 
 collections:
   articles:
