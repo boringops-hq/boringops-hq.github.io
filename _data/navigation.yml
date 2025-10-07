@@ -1,4 +1,6 @@
 main:
+  - title: "Principles"
+    url: /principles/
   - title: "Articles"
     url: /articles/
   - title: "About"
