@@ -156,7 +156,6 @@ em.reveal {                       /* gets applied via JS */
     transform: translateY(0);
 }
 
-
 .masthead__menu-item {
   margin-right: 0.75rem;
 }
@@ -167,4 +166,9 @@ em.reveal {                       /* gets applied via JS */
 
 .masthead__inner-wrap {
   flex-wrap: wrap;
+}
+
+/* Optional: also change hover underline */
+.masthead__menu-item > a:hover::after {
+  background-color: #ff9500;
 }
