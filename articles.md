@@ -14,8 +14,6 @@ header:
   caption: "bor·ing (adj.) — reliably predictable; free of drama."
 ---
 
-{% include base_path %}
-
 {% for post in site.articles %}
   {% include archive-single.html type="grid" %}
 {% endfor %}
