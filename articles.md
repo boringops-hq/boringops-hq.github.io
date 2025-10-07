@@ -4,6 +4,7 @@ title: " "
 permalink: /articles/
 author_profile: false
 entries_layout: grid
+classes: wide
 tags: [consistency, deployment, infrastructure]
 header:
   overlay_filter: 0.7
@@ -13,6 +14,8 @@ header:
   caption: "bor·ing (adj.) — reliably predictable; free of drama."
 ---
 
+{% include base_path %}
+
 {% for post in site.articles %}
-  {% include archive-single.html %}
+  {% include archive-single.html type="grid" %}
 {% endfor %}
