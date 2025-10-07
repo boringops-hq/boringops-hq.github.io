@@ -3,7 +3,7 @@ layout: archive
 title: " "
 permalink: /articles/
 author_profile: false
-entries_layout: 
+entries_layout: grid
 tags: [consistency, deployment, infrastructure]
 header:
   overlay_filter: 0.7
