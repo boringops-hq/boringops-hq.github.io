@@ -168,6 +168,11 @@ em.reveal {                       /* gets applied via JS */
   flex-wrap: wrap;
 }
 
+/* Change active nav underline color to orange */
+.masthead__menu-item--active > a::after {
+  background-color: #ff9500; /* pick your orange tone */
+}
+
 /* Optional: also change hover underline */
 .masthead__menu-item > a:hover::after {
   background-color: #ff9500;
