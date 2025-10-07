@@ -7,6 +7,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-feed
   - jekyll-sitemap
+  
 defaults:
   - scope:
       path: ""
