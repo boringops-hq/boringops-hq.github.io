@@ -1,6 +1,6 @@
 ---
 title: " "
-description: Shiny breaks. Boring endures.
+description: Shiny dulls. Boring endures.
 layout: splash
 share: true
 header:
