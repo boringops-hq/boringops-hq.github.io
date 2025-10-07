@@ -33,6 +33,11 @@ navigation:
 seo:
   type: "website"
 
+header:
+  nav:
+    enable: true
+  sticky: true
+
 footer:
   content: "© 2025 BoringOps. This space intentionally left boring."
   links:
