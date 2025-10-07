@@ -155,3 +155,16 @@ em.reveal {                       /* gets applied via JS */
     opacity: 1;
     transform: translateY(0);
 }
+
+
+.masthead__menu-item {
+  margin-right: 0.75rem;
+}
+
+.masthead__title {
+  font-size: 1rem;
+}
+
+.masthead__inner-wrap {
+  flex-wrap: wrap;
+}
