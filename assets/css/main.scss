@@ -128,3 +128,16 @@ strong {
 .greedy-nav .visible-links a:before {
   background: var(--accent);
 }
+
+em {
+    display: inline-block;          /* allow transform */
+    opacity: 0;
+    transform: translateY(0.75em);  /* start lower */
+    transition: opacity 2s ease, transform 2s ease;
+    will-change: opacity, transform;
+}
+
+em.reveal {                       /* gets applied via JS */
+    opacity: 1;
+    transform: translateY(0);
+}
