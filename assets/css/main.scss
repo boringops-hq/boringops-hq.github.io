@@ -2,48 +2,35 @@
 # Required front matter so Jekyll processes this file
 ---
 
-@import "minimal-mistakes/skins/dark"; // pick a skin (dark, air, neon, etc.)
-@import "minimal-mistakes";            // base theme
+@import "minimal-mistakes/skins/dark";
+@import "minimal-mistakes";
 
-// --- boring but cool overrides ---
+/* --- Boring but cool overrides --- */
 
-$brand-color: #ff6600; // accent (safety orange)
+$brand-color: #ff6600;
 $font-stack: 'IBM Plex Mono', monospace;
 
-
-// Global
+/* Global Typography */
 body {
   font-family: $font-stack;
   letter-spacing: -0.25px;
-}
-
-
-.page__hero-caption {
-  font-size: 1.1rem;       /* bump up size */
-  font-weight: 500;        /* make it bolder */
-  color: #ffffff !important;  /* white text */
-}
-
-
-/* Define a boring but modern palette */
-:root {
-  --fg: #e6e6e6;
-  --muted: #9ca3af;
-  --accent: #f59e0b;       /* soft amber/orange */
-  --accent-strong: #ea580c; /* stronger burnt orange */
-  --font-heading: "IBM Plex Sans", system-ui, sans-serif;
-  --font-body: "IBM Plex Mono", monospace;
-}
-
-/* Background / text defaults */
-body {
+  font-size: 15px; /* smaller base font */
+  line-height: 1.6;
   background: var(--bg);
   color: var(--fg);
-  font-family: var(--font-body);
-  line-height: 1.65;
-  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
   margin: 0;
   padding: 0;
+}
+
+/* Palette */
+:root {
+  --bg: #1e2329;
+  --fg: #e6e6e6;
+  --muted: #9ca3af;
+  --accent: #f59e0b;
+  --accent-strong: #ea580c;
+  --font-heading: "IBM Plex Sans", system-ui, sans-serif;
+  --font-body: "IBM Plex Mono", monospace;
 }
 
 /* Headings */
@@ -56,27 +43,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: clamp(2.5rem, 1.5rem + 2vw, 3.5rem);
+  font-size: 2rem;
   color: var(--accent-strong);
-  letter-spacing: -0.02em;
 }
 
 h2 {
-  font-size: clamp(1.75rem, 1.2rem + 1vw, 2.25rem);
+  font-size: 1.4rem;
   border-bottom: 2px solid var(--accent);
   padding-bottom: 0.4rem;
   color: var(--fg);
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--accent);
 }
 
-/* Paragraphs & lists */
 p, li {
-  margin-bottom: 1.25rem;
-  max-width: 60ch; 
+  margin-bottom: 1rem;
+  max-width: 60ch;
+}
+
+/* Links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-strong);
 }
 
 /* Blockquotes */
@@ -86,76 +82,20 @@ blockquote {
   margin: 1.5rem 0;
   color: var(--muted);
   font-style: italic;
-  font-size: 1.05em;
+  font-size: 0.95em;
 }
 
-/* Links */
-a {
-  color: var(--accent);
-  text-decoration: none;
-//   border-bottom: 1px dashed var(--accent);
-  transition: color 0.2s ease, border-color 0.2s ease;
-}
-a:hover {
-  color: var(--accent-strong);
-  border-color: var(--accent-strong);
-}
-
-/* Section spacing */
-section, article {
-  margin: 2rem 0;
-  padding: 0 0.5rem;
-}
-
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-}
-
-/* Strong text: subtle orange underline */
+/* Strong underline */
 strong {
   font-weight: 700;
-  display: inline;
   background-image: linear-gradient(#bc5c3c, #bc5c3c);
   background-repeat: no-repeat;
-  background-position: center bottom; /* anchor underline in center */
-  background-size: 80% 2px;           /* only 80% of text width */
+  background-position: center bottom;
+  background-size: 80% 2px;
   padding-bottom: 2px;
 }
 
-blockquote {
-    margin-bottom: 6em;
-}
-
-.page__content p {
-    margin: 0 0 1.3em 1.5em;
-}
-
-/* Indent text under numbered headings */
-h2 + p,
-h2 + p + p,
-h3 + p,
-h3 + p + p {
-  max-width: 60ch;       /* optional: keep readable line length */
-}
-em {
-    display: inline-block;          /* allow transform */
-    opacity: 0;
-    transform: translateY(0.75em);  /* start lower */
-    transition: opacity 2s ease, transform 2s ease;
-    will-change: opacity, transform;
-}
-
-em.reveal {                       /* gets applied via JS */
-    opacity: 1;
-    transform: translateY(0);
-}
-
+/* Masthead tweaks */
 .masthead__menu-item {
   margin-right: 0.75rem;
 }
@@ -168,29 +108,29 @@ em.reveal {                       /* gets applied via JS */
   flex-wrap: wrap;
 }
 
-/* Change active nav underline color to orange */
-.masthead__menu-item--active > a::after {
-  background-color: #ff9500; /* pick your orange tone */
-}
-
-/* Optional: also change hover underline */
+.masthead__menu-item--active > a::after,
 .masthead__menu-item > a:hover::after {
   background-color: #ff9500;
 }
 
-.archive .grid__item {
+/* --- Horizontal Archive Cards --- */
+.archive .archive__item {
   display: flex;
   align-items: flex-start;
-  flex-direction: row;
   gap: 1.5rem;
   margin-bottom: 2rem;
 }
 
-.archive .grid__item img {
-  width: 160px;
+.archive .archive__item-teaser {
+  flex: 0 0 160px;
+  margin: 0;
+}
+
+.archive .archive__item-teaser img {
+  width: 100%;
   height: auto;
   border-radius: 4px;
-  flex-shrink: 0;
+  display: block;
 }
 
 .archive .archive__item-body {
@@ -203,7 +143,18 @@ em.reveal {                       /* gets applied via JS */
   font-weight: 600;
   font-size: 1.25rem;
   margin: 0 0 0.4rem 0;
-  color: #9fc3d1; /* optional: your accent colour */
+  color: #9fc3d1;
+  position: relative;
+}
+
+.archive .archive__item-title a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #f28c38;
 }
 
 .archive .archive__item-excerpt {
@@ -213,33 +164,13 @@ em.reveal {                       /* gets applied via JS */
   line-height: 1.5;
 }
 
-@media (max-width: 640px) {
-  .archive .grid__item {
+@media (max-width: 700px) {
+  .archive .archive__item {
     flex-direction: column;
-    align-items: flex-start;
   }
 
-  .archive .grid__item img {
+  .archive .archive__item-teaser {
+    flex: 0 0 auto;
     width: 100%;
   }
 }
-
-.archive .archive__item-title {
-  font-weight: 600;
-  font-size: 1.25rem;
-  margin: 0 0 0.4rem 0;
-  color: #9fc3d1;
-  position: relative;
-}
-
-.archive .archive__item-title::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 40px;
-  height: 2px;
-  background-color: #f28c38; /* your BoringOps orange */
-}
-
-
