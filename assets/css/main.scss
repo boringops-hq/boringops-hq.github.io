@@ -14,14 +14,13 @@ $font-stack: 'IBM Plex Mono', monospace;
 body {
   font-family: $font-stack;
   letter-spacing: -0.25px;
-  line-height: 1.6;
   font-size: clamp(0.9rem, 0.85rem + 0.35vw, 1.05rem);
+  line-height: 1.6;
   background: var(--bg);
   color: var(--fg);
   margin: 0;
   padding: 0;
 }
-
 
 /* Palette */
 :root {
@@ -34,29 +33,30 @@ body {
   --font-body: "IBM Plex Mono", monospace;
 }
 
-/* Headings */
+/* Headings — fluid, balanced, boringly elegant */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.2;
   margin-top: 2rem;
   margin-bottom: 1rem;
-}
-
-h1 {
-  font-size: 2rem;
-  color: var(--accent-strong);
-}
-
-h2 {
-  font-size: 1.4rem;
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 0.4rem;
   color: var(--fg);
 }
 
+h1 {
+  font-size: clamp(1.8rem, 1.2rem + 2vw, 2.8rem);
+  color: var(--accent-strong);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: clamp(1.4rem, 1rem + 1vw, 2rem);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.4rem;
+}
+
 h3 {
-  font-size: 1.2rem;
+  font-size: clamp(1.2rem, 0.9rem + 0.5vw, 1.5rem);
   color: var(--accent);
 }
 
@@ -80,7 +80,7 @@ a:hover {
 blockquote {
   border-left: 4px solid var(--accent);
   padding-left: 1rem;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 3rem 0;
   color: var(--muted);
   font-style: italic;
   font-size: 0.95em;
@@ -114,41 +114,66 @@ strong {
   background-color: #ff9500;
 }
 
-/* --- Horizontal Archive Cards --- */
-.archive .archive__item {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+/* Hero caption fluid scaling */
+.page__hero-caption {
+  font-size: clamp(1rem, 0.9rem + 0.4vw, 1.2rem);
+  font-weight: 500;
+  color: #ffffff !important;
 }
 
-.archive .archive__item-teaser {
-  flex: 0 0 160px;
+/* --- Full-width horizontal archive cards --- */
+
+.layout--archive .archive {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.layout--archive .archive__item {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 2rem;
+  width: 100%;
+  margin: 0;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.layout--archive .archive__item-teaser {
+  flex: 0 0 200px;
   margin: 0;
 }
 
-.archive .archive__item-teaser img {
+.layout--archive .archive__item-teaser img {
   width: 100%;
   height: auto;
-  border-radius: 4px;
+  border-radius: 6px;
   display: block;
 }
 
-.archive .archive__item-body {
+.layout--archive .archive__item-body {
   flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
-.archive .archive__item-title {
+.layout--archive .archive__item-title {
+  display: block;              
   font-weight: 600;
-  font-size: 1.25rem;
-  margin: 0 0 0.4rem 0;
+  font-size: 1.35rem;
   color: #9fc3d1;
+  margin-bottom: 0.6rem;
+}
+
+.layout--archive .archive__item-title a {
+  color: inherit;
+  text-decoration: none;
   position: relative;
 }
 
-.archive .archive__item-title a::after {
+.layout--archive .archive__item-title a::after {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -158,20 +183,20 @@ strong {
   background-color: #f28c38;
 }
 
-.archive .archive__item-excerpt {
-  margin: 0;
+.layout--archive .archive__item-excerpt {
   color: #ccc;
-  font-size: 0.95rem;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 65ch;
 }
 
-@media (max-width: 700px) {
-  .archive .archive__item {
+/* Mobile: stack image above text */
+@media (max-width: 768px) {
+  .layout--archive .archive__item {
     flex-direction: column;
   }
 
-  .archive .archive__item-teaser {
-    flex: 0 0 auto;
+  .layout--archive .archive__item-teaser {
     width: 100%;
   }
 }
