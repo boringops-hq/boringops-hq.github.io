@@ -177,3 +177,69 @@ em.reveal {                       /* gets applied via JS */
 .masthead__menu-item > a:hover::after {
   background-color: #ff9500;
 }
+
+.archive .grid__item {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.archive .grid__item img {
+  width: 160px;
+  height: auto;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.archive .archive__item-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.archive .archive__item-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 0 0 0.4rem 0;
+  color: #9fc3d1; /* optional: your accent colour */
+}
+
+.archive .archive__item-excerpt {
+  margin: 0;
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .archive .grid__item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .archive .grid__item img {
+    width: 100%;
+  }
+}
+
+.archive .archive__item-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 0 0 0.4rem 0;
+  color: #9fc3d1;
+  position: relative;
+}
+
+.archive .archive__item-title::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #f28c38; /* your BoringOps orange */
+}
+
+
