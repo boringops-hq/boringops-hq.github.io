@@ -129,3 +129,7 @@ strong {
   font-weight: 500;
   color: #ffffff !important;
 }
+
+.greedy-nav .visible-links a:before {
+  color: var(--accent);
+}
