@@ -24,11 +24,10 @@ body {
 
 /* Palette */
 :root {
-  --bg: #1e2329;
   --fg: #e6e6e6;
   --muted: #9ca3af;
   --accent: #f59e0b;
-  --accent-strong: #ea580c;
+  --accent-strong: #ea5a0c91;
   --font-heading: "IBM Plex Sans", system-ui, sans-serif;
   --font-body: "IBM Plex Mono", monospace;
 }
@@ -65,6 +64,16 @@ p, li {
   max-width: 60ch;
 }
 
+/* Indent paragraphs following sub-headings */
+h3 + p,
+h3 + p + p,
+h2 + p,
+h2 + p + p {
+  margin-left: 5em;
+  max-width: 60ch; /* keep comfortable line length */
+}
+
+
 /* Links */
 a {
   color: var(--accent);
@@ -80,7 +89,7 @@ a:hover {
 blockquote {
   border-left: 4px solid var(--accent);
   padding-left: 1rem;
-  margin: 1.5rem 0 3rem 0;
+  margin: 1.5rem 0 8rem 0;
   color: var(--muted);
   font-style: italic;
   font-size: 0.95em;
@@ -119,84 +128,4 @@ strong {
   font-size: clamp(1rem, 0.9rem + 0.4vw, 1.2rem);
   font-weight: 500;
   color: #ffffff !important;
-}
-
-/* --- Full-width horizontal archive cards --- */
-
-.layout--archive .archive {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.layout--archive .archive__item {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  gap: 2rem;
-  width: 100%;
-  margin: 0;
-  padding: 1.5rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.layout--archive .archive__item-teaser {
-  flex: 0 0 200px;
-  margin: 0;
-}
-
-.layout--archive .archive__item-teaser img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  display: block;
-}
-
-.layout--archive .archive__item-body {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.layout--archive .archive__item-title {
-  display: block;              
-  font-weight: 600;
-  font-size: 1.35rem;
-  color: #9fc3d1;
-  margin-bottom: 0.6rem;
-}
-
-.layout--archive .archive__item-title a {
-  color: inherit;
-  text-decoration: none;
-  position: relative;
-}
-
-.layout--archive .archive__item-title a::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 40px;
-  height: 2px;
-  background-color: #f28c38;
-}
-
-.layout--archive .archive__item-excerpt {
-  color: #ccc;
-  font-size: 1rem;
-  line-height: 1.6;
-  max-width: 65ch;
-}
-
-/* Mobile: stack image above text */
-@media (max-width: 768px) {
-  .layout--archive .archive__item {
-    flex-direction: column;
-  }
-
-  .layout--archive .archive__item-teaser {
-    width: 100%;
-  }
 }
