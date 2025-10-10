@@ -60,3 +60,5 @@ analytics:
   google:
     tracking_id: "G-N31L1R3FES"
     anonymize_ip: true
+
+google_analytics: "G-N31L1R3FES"
