@@ -72,7 +72,7 @@ jobs:
         run: |
           cd site
           bundle exec jekyll clean
-          bundle exec jekyll build -d ../_site
+          JEKYLL_ENV=production bundle exec jekyll build -d ../_site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
