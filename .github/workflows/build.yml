@@ -67,6 +67,8 @@ jobs:
            
 
       - name: Build site
+        env:
+          JEKYLL_ENV: production
         run: |
           cd site
           bundle exec jekyll clean
