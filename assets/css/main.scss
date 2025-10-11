@@ -52,11 +52,12 @@ h2 {
   font-size: clamp(1.4rem, 1rem + 1vw, 2rem);
   border-bottom: 2px solid var(--accent);
   padding-bottom: 0.4rem;
+  color: var(--accent);
 }
 
 h3 {
   font-size: clamp(1.2rem, 0.8rem + 0.5vw, 1.6rem);
-  color: var(--accent);
+  color: var(--accent-strong);
 }
 
 p, li {
