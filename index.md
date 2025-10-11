@@ -31,23 +31,11 @@ Boring is the soil innovation grows in.
 BoringOps is the discipline of making systems so dull they
 disappear, freeing teams to build what matters.
 
-<!-- ## The Problem With Shiny
-Shiny breaks. Boring endures.  
+## Latest Articles
 
-Innovation without stability is chaos. Stability without innovation is a graveyard.  We build the rails of progress, invisible, uncelebrated, and absolutely essential.  
-
-Boring is not the absence of ambition. It is the foundation of trust.   -->
-
-{% include MANIFESTO.md %}
-
-## Signs You’ve Achieved Boring
-- Deploys don’t need an audience.  
-- Incidents are rare, uneventful, and easy to explain.  
-- New hires can ship in days, not months.  
-- Nobody panics about scaling.  
-- Finance complains about your bill (less).  
-- Customers never think about your infra.  
-- You forget it’s even there, until you need it, and it works.  
+{% for post in site.posts limit:5 %}
+  {% include archive-single.html %}
+{% endfor %}
 
 ## The Closing Charge
 We don’t worship boredom because it is dull.  
