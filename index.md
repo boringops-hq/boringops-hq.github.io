@@ -33,7 +33,7 @@ disappear, freeing teams to build what matters.
 
 ## Latest Articles
 
-{% for post in site.posts limit:5 %}
+{% for post in site.articles limit:5 %}
   {% include archive-single.html %}
 {% endfor %}
 
