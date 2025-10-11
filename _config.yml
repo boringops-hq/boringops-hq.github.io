@@ -16,7 +16,6 @@ defaults:
       path: ""
     values:
       layout: single
-      analytics: true  # Add this
 
   - scope:
       path: ""
@@ -25,8 +24,6 @@ defaults:
       layout: single
       show_excerpts: true
       author_profile: false
-      teaser: /assets/images/sensible_header.png
-      analytics: true  # Add this
 
 
 collections:
