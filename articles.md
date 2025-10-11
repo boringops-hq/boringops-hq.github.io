@@ -12,5 +12,5 @@ header:
 ---
 
 {% for post in site.articles %}
-  {% include archive-single.html type="grid" %}
+  {% include archive-single.html %}
 {% endfor %}
