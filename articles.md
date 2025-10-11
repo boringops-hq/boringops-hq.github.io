@@ -3,8 +3,7 @@ layout: archive
 title: " "
 permalink: /articles/
 author_profile: false
-entries_layout: grid
-classes: wide
+entries_layout: list
 header:
   overlay_filter: 0.7
   overlay_color: "#000000"
