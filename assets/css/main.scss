@@ -28,6 +28,7 @@ body {
   --muted: #9ca3af;
   --accent: #f59e0b;
   --accent-strong: #f79b69;
+  --accent-light: #f9bfa0;
   --font-heading: "IBM Plex Sans", system-ui, sans-serif;
   --font-body: "IBM Plex Mono", monospace;
 }
@@ -62,7 +63,7 @@ h3 {
 
 p, li {
   margin-bottom: 1rem;
-  // max-width: 60ch;
+  max-width: 75ch;
 }
 
 /* Indent paragraphs following sub-headings */
@@ -83,7 +84,7 @@ a:hover {
 
 /* Blockquotes */
 blockquote {
-  border-left: 4px solid var(--accent);
+  border-left: 4px solid var(--accent-light);
   padding-left: 1rem;
   margin: 1.5rem 0 8rem 0;
   color: var(--muted);
@@ -94,10 +95,11 @@ blockquote {
 /* Strong underline */
 strong {
   font-weight: 700;
-  background-image: linear-gradient(#bc5c3c, #bc5c3c);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: 80% 2px;
+  color: var(--accent-light);
+  // background-image: linear-gradient(#c09688, #c18875);
+  // background-repeat: no-repeat;
+  // background-position: center bottom;
+  // background-size: 80% 2px;
   padding-bottom: 2px;
 }
 
@@ -145,4 +147,68 @@ em.reveal {                       /* gets applied via JS */
 
 .page__footer {
     margin-top: 0em;
+}
+
+.articles-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 1.5rem; /* indent entire list */
+}
+
+.articles-list li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 3rem;
+}
+
+.articles-list li::before {
+  content: "";
+  width: 0.35rem;
+  height: 0.35rem;
+  background: #575c64;
+  position: absolute;
+  left: 0;
+  top: 0.65rem; /* move down to center the square */
+  border-radius: 1px;
+}
+
+.articles-list a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.articles-list a:hover {
+  text-decoration: underline;
+}
+
+.post-meta {
+  color: #575c64;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  white-space: nowrap;
+}
+
+.post-excerpt {
+  margin: 2rem 0 0 0; 
+  line-height: 1.6;
+}
+
+.articles-list a:visited {
+  color:var(--accent) /* same as default */
+}
+
+.articles-list a:hover {
+  color: #e1d0bb; /* lighter orange on hover */
+}
+
+.articles-list blockquote {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  margin-left: 1.5rem;
+  color: #c6c6c6;         /* make excerpt text white */
+  font-size: 0.85rem;     /* smaller, cleaner excerpt */
+  line-height: 1.5;
+
 }
