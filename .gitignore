@@ -1,0 +1,7 @@
+site
+_site
+.jekyll*
+_includes/MANIFESTO*
+_articles/**
+Gemfile
+Gemfile.lock
