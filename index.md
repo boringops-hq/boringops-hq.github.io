@@ -42,6 +42,7 @@ disappear, freeing teams to **build what matters**.
   </li>
 {% endfor %}
 </ul>
+
 <div class="articles-footer">
   <a href="/articles/" class="view-all-articles">View all articles →</a>
 </div>
@@ -53,4 +54,4 @@ We choose boredom because it is freedom: freedom from **chaos**, freedom from **
 
 Boring isn’t the enemy of progress.  
 
-**Boring is the ground it stands on**.  
+**Boring is the foundation progress is built upon**.  
