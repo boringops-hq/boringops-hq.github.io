@@ -2,6 +2,6 @@ site
 _site
 .jekyll*
 _includes/MANIFESTO*
-_articles/**
+_articles
 Gemfile
 Gemfile.lock

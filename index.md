@@ -31,6 +31,14 @@ Boring is the soil of innovation.
 BoringOps is the discipline of making systems so dull they
 disappear, freeing teams to **build what matters**.
 
+## The BoringOps Law of Excitaton
+
+ The more exciting a system is, the less reliable it is.
+
+ The less reliable it is, the more heroics it demands.
+ 
+ The more heroics it demands, the less that system can ever scale.
+
 ## Latest Articles
 
 <ul class="articles-list">

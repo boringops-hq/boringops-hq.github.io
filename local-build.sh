@@ -6,7 +6,7 @@ SITE_DIR="$HOME/Code/BoringOps/boringops-hq.github.io"
 MANIFESTO_DIR="$HOME/Code/BoringOps/boringops-manifesto"
 ARTICLES_DIR="$HOME/Code/BoringOps/boringops-articles"
 # New path for the build output
-BUILD_DIR="$HOME/Code/BoringOps/boringops-local/_site"
+BUILD_DIR="$SITE_DIR/_site"
 # New persistent path for the development Chrome profile
 DEV_PROFILE_DIR="$HOME/Code/BoringOps/boringops-local/chrome_profile"
 
@@ -96,4 +96,5 @@ echo "----------------------------------------"
 bundle exec jekyll serve \
   --livereload \
   --force_polling \
+  --future \
   --destination "$BUILD_DIR"
