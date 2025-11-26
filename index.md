@@ -15,18 +15,25 @@ header:
 Exciting infrastructure means outages, drama, and late-night calls.
 
 Boring is **predictable**. Boring is **stable**. 
-Boring is a good nights sleep during a change window.
+Boring is a good night's sleep while the change window runs itself.
 
 BoringOps is the discipline of making systems so dull they
 disappear, freeing teams to **build what matters**.
 
 ## The BoringOps Law of Excitation
 
- The more exciting a system is, the less reliable it is.
+The more exciting a system is, the less reliable it is.
 
- The less reliable it is, the more heroics it demands.
- 
- The more heroics it demands, the closer the operation drifts toward failure.
+The less reliable it is, the more heroics it demands.
+
+The more heroics it demands, the closer the operation drifts toward failure.
+
+### BoringOps 101
+
+If you're new to the philosophy, we recommend these foundational pieces:
+* [**BoringOps: The Efficiency Multiplier**](/articles/boringops_efficiency/)
+* [**BoringOps vs. DevOps, DevSecOps, and SRE**](/articles/boringops_vs_devops_devsecops_sre/)
+* [**From Chaos to Calm: Maturity is Earned**](/articles/maturity_is_earned/)
 
 ## Latest Articles
 
@@ -45,10 +52,10 @@ disappear, freeing teams to **build what matters**.
 </div>
 
 ## The Closing Charge
-We don’t worship boredom because it is dull.  
+We don’t value boredom because it is dull.  
 
 We choose boredom because it is freedom from **chaos**, freedom from **heroics**, freedom to **build what matters**.  
 
 Boring isn’t the enemy of progress.  
 
-**Boring is the engine of progress**.  
+**Boring is the highest form of discipline.**
