@@ -11,8 +11,7 @@ header:
   caption: "bor·ing (adj.) — reliably predictable; free of drama."
 ---
 
-## The Embodiment of Calm Technology
-
+<!-- ## The Embodiment of Calm Technology -->
 Modern engineering worships the wrong things: heroics, drama, and the compulsive hunt for new toys. But excitement in infrastructure is not progress. It is a symptom of fragility.
 
 **Shiny breaks. Boring endures.**

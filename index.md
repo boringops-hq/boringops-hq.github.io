@@ -9,8 +9,8 @@ header:
   overlay_image: /assets/images/sensible_header.png
   caption: "bor·ing (adj.): reliably predictable; free of drama."
 ---
-
-## Why BoringOps
+<!-- 
+## Why BoringOps -->
 
 Exciting infrastructure means outages, drama, and late-night calls.
 
@@ -20,17 +20,11 @@ Boring is a good night's sleep while the change window runs itself.
 BoringOps is the discipline of making systems so dull they
 disappear, freeing teams to **build what matters**.
 
-## The BoringOps Law of Excitation
+>**The BoringOps Law of Excitation**: The more exciting a system is, the less reliable it is.
+>The less reliable it is, the more heroics it demands.
+>The more heroics it demands, the closer the operation drifts toward failure.
 
-The more exciting a system is, the less reliable it is.
-
-The less reliable it is, the more heroics it demands.
-
-The more heroics it demands, the closer the operation drifts toward failure.
-
-## BoringOps 101
-
-If you're new to the philosophy, we recommend these foundational pieces:
+To go deeper:
 * [**BoringOps: The Efficiency Multiplier**](/articles/the-efficiency-multiplier/)
 * [**BoringOps vs. DevOps, DevSecOps, and SRE**](/articles/boringops-vs-devops-vs-devsecops-vs-sre/)
 * [**From Chaos to Calm: Maturity is Earned**](/articles/from-chaos-to-calm-earning-maturity/)
