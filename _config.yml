@@ -36,8 +36,6 @@ jekyll-archives:
   layout: tag_archive # Name of the layout file you will create
   permalinks:
     tag: '/tags/:name/' # Defines the URL structure (e.g., /tags/consistency/)
-  collections:
-    - articles
 
 # Navigation
 navigation:
@@ -59,12 +57,6 @@ footer:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:hello@boringops.sh"
-
-analytics:
-  provider: "google-gtag"
-  google:
-    tracking_id: "G-N31L1R3FES"
-    anonymize_ip: true
 
 comments:
   share: 
