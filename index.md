@@ -28,7 +28,7 @@ The less reliable it is, the more heroics it demands.
 
 The more heroics it demands, the closer the operation drifts toward failure.
 
-### BoringOps 101
+## BoringOps 101
 
 If you're new to the philosophy, we recommend these foundational pieces:
 * [**BoringOps: The Efficiency Multiplier**](/articles/boringops_efficiency/)
