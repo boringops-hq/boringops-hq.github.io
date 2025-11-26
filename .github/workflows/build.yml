@@ -43,8 +43,8 @@ jobs:
 
       - name: Copy pages into site
         run: | 
-          mkdir -p site/_articles
-          cp articles/articles/*.md site/_articles/
+          mkdir -p site/_posts
+          cp articles/articles/*.md site/_posts/
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -62,6 +62,7 @@ jobs:
           gem "jekyll-include-cache"
           gem "jekyll-feed"
           gem "jekyll-sitemap"
+          gem "jekyll-archives"
           GEMS
           bundle install
            

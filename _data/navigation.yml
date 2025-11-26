@@ -1,7 +1,7 @@
 main:
   - title: "Home"
     url: /
-  - title: "Principles"
-    url: /principles/
+  - title: "Pillars"
+    url: /pillars/
   - title: "Articles"
     url: /articles/

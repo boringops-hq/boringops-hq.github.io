@@ -145,7 +145,7 @@ em.reveal {                       /* gets applied via JS */
     transform: translateY(0);
 }
 
-.page__footer {
+.page__footer footer{
     margin-top: 0em;
 }
 
@@ -212,3 +212,126 @@ em.reveal {                       /* gets applied via JS */
   line-height: 1.5;
 
 }
+
+/* --- CSS for Subtly Faded, Very Small Tags --- */
+
+.article-tags {
+  margin-top: 0.5rem;   /* Space between author/date and tags */
+  margin-left: 1rem;    /* Indent slightly to align with excerpt */
+  display: block;
+}
+
+.articles-list .post-tag {
+  display: inline-block;
+  font-size: 0.55rem;        /* ~25% smaller than 0.7rem, very tiny */
+  font-weight: 500;
+  color: #7c8085;           /* Lighter grey for faded effect (fades into background) */
+  padding: 0.1rem 0.3rem;    /* Minimal padding */
+  margin-right: 0.3rem;      /* Reduced margin */
+  margin-bottom: 0.3rem;
+  border: 1px solid #4a4f55; ;             /* REMOVE BORDER to reduce visual weight */
+  border-radius: 2px;
+  text-transform: uppercase; /* Use uppercase for tiny text for better distinction */
+}
+
+/* Ensure hover state is subtle for tags */
+.articles-list .post-tag:hover {
+  color: var(--accent);
+  text-decoration: none;
+  background-color: #3d3d3d; /* Subtle dark background on hover for feedback */
+}
+
+/* --- CSS for the Small Footer CTA --- */
+
+.footer-cta {
+  /* Reduce the font size of the entire call-to-action block */
+  font-size: 0.8rem; 
+  
+  /* Ensure it has minimal margin around it */
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+}
+
+.footer-cta p {
+  /* Remove the default paragraph margin/padding to save space */
+  margin: 0;
+  padding: 0;
+  
+  /* Mute the introductory text slightly */
+  color: var(--muted);
+}
+
+.footer-cta a {
+  /* The link remains bold and accented, but inherits the smaller font size */
+  color: var(--accent-strong) !important;
+  font-weight: 700;
+
+}
+
+.footer-cta a:hover {
+  color: var(--accent-light) !important;
+}
+
+/* --- Styling for the Social Share Block (20% Larger) --- */
+
+.social-share {
+  /* Aligns the whole block */
+  text-align: right; 
+  /* Vertical separation remains the same (1.8rem) */
+  padding-top: 1.8rem; 
+  padding-bottom: 0.4rem; 
+  
+  /* Introductory text is slightly larger */
+  color: var(--muted);
+  font-size: 0.8rem; 
+  font-family: var(--font-body); 
+}
+
+/* Styling for all individual buttons */
+.social-btn {
+  display: inline-block;
+  font-size: 0.6rem; /* 20% bigger button text (0.6rem) */
+  font-weight: 500;
+  color: var(--fg); 
+  background-color: transparent; 
+  padding: 0.12rem 0.36rem; /* Increased padding */
+  margin: 0.12rem; /* Increased margin */
+  border: 1px solid var(--muted); 
+  border-radius: 3px; 
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Styling for the icon inside the button */
+.social-btn i {
+  margin-right: 0.3rem; 
+  font-size: 0.7rem; /* 20% bigger icon size */
+  color: var(--muted);
+}
+
+/* Hover State remains strong */
+.social-btn:hover {
+  color: var(--accent-strong); 
+  border-color: var(--accent-strong); 
+  background-color: rgba(247, 155, 105, 0.1); 
+  transform: none; 
+}
+
+/* Hover State for the Icon */
+.social-btn:hover i {
+  color: var(--accent-strong); 
+}
+
+/* Hover State remains strong for feedback */
+.social-btn:hover {
+  color: var(--accent-strong); 
+  border-color: var(--accent-strong); 
+  background-color: rgba(247, 155, 105, 0.1); 
+  transform: none; /* Removed the lift to keep it simple and boring */
+}
+
+/* Hover State for the Icon */
+.social-btn:hover i {
+  color: var(--accent-strong); 
+}
+

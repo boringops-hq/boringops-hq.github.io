@@ -2,7 +2,7 @@
 title: "The 8.5 Pillars of BoringOps"
 description: Shiny dulls. Boring endures.
 layout: splash
-permalink: /principles/
+permalink: /pillars/
 share: true
 header:
   overlay_filter: 0.7

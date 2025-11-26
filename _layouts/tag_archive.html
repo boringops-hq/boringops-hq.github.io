@@ -1,0 +1,26 @@
+---
+layout: single
+---
+
+{% assign tag_name = page.url | split: "/" | last | replace: "-", " " | capitalize %}
+
+<article class="archive-page">
+  <header>
+    <h1>🏷️ Posts Tagged: {{ tag_name }}</h1>
+    <p>Viewing all articles related to the **{{ tag_name }}** discipline.</p>
+  </header>
+
+  <ul class="posts-list">
+    {% for post in page.posts %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a> 
+        <span class="post-meta">{{ post.author }} • {{ post.date | date: "%b %-d" }}</span>
+        <blockquote>{{ post.excerpt | strip_html | truncate: 150 }}</blockquote>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="view-all">
+    <a href="/tags/">← View All Tags</a>
+  </p>
+</article>

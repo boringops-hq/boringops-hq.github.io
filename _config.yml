@@ -7,6 +7,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-archives
 
 sass:
   style: compressed
@@ -16,20 +17,27 @@ defaults:
       path: ""
     values:
       layout: single
+      share: true
 
   - scope:
       path: ""
-      type: articles
+      type: posts
     values:
       layout: single
       show_excerpts: true
       author_profile: false
+      share: true
 
 
-collections:
-  articles:
-    output: true
-    permalink: /articles/:title/
+# Configuration for jekyll-archives
+jekyll-archives:
+  enabled:
+    - tags # Tells the plugin to generate pages for tags
+  layout: tag_archive # Name of the layout file you will create
+  permalinks:
+    tag: '/tags/:name/' # Defines the URL structure (e.g., /tags/consistency/)
+  collections:
+    - articles
 
 # Navigation
 navigation:
@@ -57,4 +65,10 @@ analytics:
   google:
     tracking_id: "G-N31L1R3FES"
     anonymize_ip: true
+
+comments:
+  share: 
+    - twitter
+    - linkedin
+    - bluesky
 

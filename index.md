@@ -31,18 +31,29 @@ The more heroics it demands, the closer the operation drifts toward failure.
 ## BoringOps 101
 
 If you're new to the philosophy, we recommend these foundational pieces:
-* [**BoringOps: The Efficiency Multiplier**](/articles/boringops_efficiency/)
-* [**BoringOps vs. DevOps, DevSecOps, and SRE**](/articles/boringops_vs_devops_devsecops_sre/)
-* [**From Chaos to Calm: Maturity is Earned**](/articles/maturity_is_earned/)
+* [**BoringOps: The Efficiency Multiplier**](/articles/the-efficiency-multiplier/)
+* [**BoringOps vs. DevOps, DevSecOps, and SRE**](/articles/boringops-vs-devops-vs-devsecops-vs-sre/)
+* [**From Chaos to Calm: Maturity is Earned**](/articles/from-chaos-to-calm-earning-maturity/)
 
 ## Latest Articles
 
 <ul class="articles-list">
-{% for post in site.articles limit:5 %}
+{% for post in site.posts limit:5 %}
   <li>
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     <span class="post-meta">{{ post.author }} • {{ post.date | date: "%b %-d" }}</span>
+    
     <blockquote class="post-excerpt">{{ post.excerpt }}</blockquote>
+
+    <div class="article-tags">
+      {% for tag in post.tags %}
+        <a href="{{ site.baseurl }}/tags/{{ tag | slugify }}/" class="post-tag">
+          #{{ tag }}
+        </a>
+
+      {% endfor %}
+    </div>
+
   </li>
 {% endfor %}
 </ul>

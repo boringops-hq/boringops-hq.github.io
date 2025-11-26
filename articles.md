@@ -13,6 +13,6 @@ header:
 
 # BoringOps Articles
 
-{% for post in site.articles %}
+{% for post in site.posts %}
   {% include archive-single.html %}
 {% endfor %}

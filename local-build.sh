@@ -20,18 +20,18 @@ echo " SYNCING CONTENT INTO REAL SITE REPO"
 echo "----------------------------------------"
 
 mkdir -p "$SITE_DIR/_includes"
-mkdir -p "$SITE_DIR/_articles"
+mkdir -p "$SITE_DIR/_posts"
 
 # Remove existing symlinks/files if they exist
 rm -f "$SITE_DIR/_includes/MANIFESTO.md"
-rm -f "$SITE_DIR/_articles/"*.md 2>/dev/null || true
+rm -f "$SITE_DIR/_posts/"*.md 2>/dev/null || true
 
 # Create symlink for manifesto
 ln -s "$MANIFESTO_DIR/MANIFESTO.md" "$SITE_DIR/_includes/MANIFESTO.md"
 
 # Create symlinks for articles
 for article in "$ARTICLES_DIR/articles/"*.md; do
-  [ -f "$article" ] && ln -s "$article" "$SITE_DIR/_articles/$(basename "$article")"
+  [ -f "$article" ] && ln -s "$article" "$SITE_DIR/_posts/$(basename "$article")"
 done
 
 echo "----------------------------------------"
@@ -46,6 +46,7 @@ gem "minimal-mistakes-jekyll"
 gem "jekyll-include-cache"
 gem "jekyll-feed"
 gem "jekyll-sitemap"
+gem "jekyll-archives"
 GEMS
 
 echo "----------------------------------------"
