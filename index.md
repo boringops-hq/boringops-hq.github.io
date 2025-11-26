@@ -15,7 +15,7 @@ header:
 Exciting infrastructure means outages, drama, and late-night calls.
 
 Boring is **predictable**. Boring is **stable**. 
-Boring is the soil of innovation.
+Boring is a good nights sleep during a change window.
 
 BoringOps is the discipline of making systems so dull they
 disappear, freeing teams to **build what matters**.
