@@ -20,7 +20,7 @@ Boring is a good night's sleep while the change window runs itself.
 BoringOps is the discipline of making systems so dull they
 disappear, freeing teams to **build what matters**.
 
->**The BoringOps Law of Excitation**: The more exciting a system is, the less reliable it is.
+>**The Law of Excitation**: The more exciting a system is, the less reliable it is.
 >The less reliable it is, the more heroics it demands.
 >The more heroics it demands, the closer the operation drifts toward failure.
 

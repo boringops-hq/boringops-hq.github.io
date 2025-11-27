@@ -11,12 +11,11 @@ header:
   caption: "bor·ing (adj.) — reliably predictable; free of drama."
 ---
 
-<!-- ## The Embodiment of Calm Technology -->
 Modern engineering worships the wrong things: heroics, drama, and the compulsive hunt for new toys. But excitement in infrastructure is not progress. It is a symptom of fragility.
 
 **Shiny breaks. Boring endures.**
 
-BoringOps is the practice of building systems that behave the same way every day, in every condition. It is the discipline of removing chaos so teams can focus on work that actually moves the business forward.
+BoringOps is the practice of building systems that behave the same way every day, in every condition. It is the discipline of removing chaos allowing teams to focus on the work that moves the **business** forward.
 
 We operate through:
 

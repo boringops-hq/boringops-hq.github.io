@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 title: "BoringOps: All Article Tags"
 permalink: /tags/
 ---
@@ -7,8 +7,6 @@ permalink: /tags/
 # Article Topics and Disciplines
 
 The BoringOps philosophy is built on core principles. Explore all articles by topic to find the foundational pieces on **consistency, incentives, and stability.**
-
----
 
 {% assign sorted_tags = site.tags | sort %}
 
