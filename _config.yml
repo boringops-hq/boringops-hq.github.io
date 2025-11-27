@@ -27,6 +27,7 @@ defaults:
       show_excerpts: true
       author_profile: false
       share: true
+      permalink: /articles/:title/
 
 
 # Configuration for jekyll-archives

@@ -25,9 +25,9 @@ disappear, freeing teams to **build what matters**.
 >The more heroics it demands, the closer the operation drifts toward failure.
 
 To go deeper:
-* [**BoringOps: The Efficiency Multiplier**](/articles/the-efficiency-multiplier/)
-* [**BoringOps vs. DevOps, DevSecOps, and SRE**](/articles/boringops-vs-devops-vs-devsecops-vs-sre/)
-* [**From Chaos to Calm: Maturity is Earned**](/articles/from-chaos-to-calm-earning-maturity/)
+* [**BoringOps: The Efficiency Multiplier**](/articles/boringops_the_efficiency_multiplier/)
+* [**BoringOps vs. DevOps, DevSecOps, and SRE**](/articles/boringops_vs_devops_devsecops_sre/)
+* [**From Chaos to Calm: Maturity is Earned**](/articles/the_six_stages_of_operational_maturity/)
 
 ## Latest Articles
 
