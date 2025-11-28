@@ -37,7 +37,7 @@ To go deeper:
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     <span class="post-meta">{{ post.author }} • {{ post.date | date: "%b %-d" }}</span>
     
-    <blockquote class="post-excerpt">{{ post.excerpt }}</blockquote>
+    <blockquote class="post-excerpt"><em>{{ post.excerpt }}</em></blockquote>
 
     <div class="article-tags">
       {% for tag in post.tags %}

@@ -5,6 +5,7 @@ set -e
 SITE_DIR="$HOME/Code/BoringOps/boringops-hq.github.io"
 MANIFESTO_DIR="$HOME/Code/BoringOps/boringops-manifesto"
 ARTICLES_DIR="$HOME/Code/BoringOps/boringops-articles"
+DRAFTS_DIR="$HOME/Code/BoringOps/boringops-drafts"
 # New path for the build output
 BUILD_DIR="$SITE_DIR/_site"
 # New persistent path for the development Chrome profile
@@ -31,6 +32,11 @@ ln -s "$MANIFESTO_DIR/MANIFESTO.md" "$SITE_DIR/_includes/MANIFESTO.md"
 
 # Create symlinks for articles
 for article in "$ARTICLES_DIR/articles/"*.md; do
+  [ -f "$article" ] && ln -s "$article" "$SITE_DIR/_posts/$(basename "$article")"
+done
+
+# Create symlinks for articles
+for article in "$DRAFTS_DIR/articles/"*.md; do
   [ -f "$article" ] && ln -s "$article" "$SITE_DIR/_posts/$(basename "$article")"
 done
 
