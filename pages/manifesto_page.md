@@ -1,6 +1,6 @@
 ---
 title: "The Manifesto"
-description: Shiny breaks. Boring endures.
+description: Shiny dulls. Boring endures.
 layout: single
 share: true
 permalink : /manifesto/
