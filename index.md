@@ -9,22 +9,32 @@ header:
   overlay_image: /assets/images/sensible_header.png
   caption: "bor·ing (adj.): reliably predictable; free of drama."
 ---
-<!-- 
-## Why BoringOps -->
 
-Exciting infrastructure means outages, drama, and late-night calls.
+Every outage has the same origin story: someone, somewhere, got **excited**. Exciting infrastructure is a slot machine. You pull the lever and pray the weekend survives.
 
-Boring is **predictable**. Boring is **stable**. 
-Boring is a good night's sleep while the change window runs itself.
+Boring infrastructure is the opposite. It’s the quiet machine that does the same thing today, tomorrow, and next quarter. No surprises. No drama. No adrenaline.
 
-BoringOps is the discipline of making systems so dull they
-disappear, freeing teams to **build what matters**.
+**That’s the point.**  This isn’t anti-innovation. It’s anti-chaos. 
 
->**The Law of Excitation**: The more exciting a system is, the less reliable it is.
->The less reliable it is, the more heroics it demands.
->The more heroics it demands, the closer the operation drifts toward failure.
+BoringOps isn’t minimalism. It’s discipline. It’s the refusal to burn human hours paying for avoidable mistakes and the belief that engineering talent should be building the future, not fixing Thursday.
 
-To go deeper:
+> **The Law of Excitation**  
+>
+> The more exciting a system becomes, the less reliable it is.  
+> The less reliable it is, the more heroics it demands.  
+> The more heroics it demands, the closer the operation drifts to failure.  
+
+Heroics are not a badge of honor. They are a confession.
+
+BoringOps doesn’t reduce heroics. **It eliminates the need for them.**
+
+If you’re tired of chaos, you’re in the right place. If you’re addicted to complexity, this philosophy will feel like judgment.
+
+But good, because it’s meant to.
+
+---
+
+Diving into BoringOps:
 * [**BoringOps: The Efficiency Multiplier**](/articles/boringops_the_efficiency_multiplier/)
 * [**BoringOps vs. DevOps, DevSecOps, and SRE**](/articles/boringops_vs_devops_devsecops_sre/)
 * [**From Chaos to Calm: Maturity is Earned**](/articles/the_six_stages_of_operational_maturity/)
@@ -32,10 +42,10 @@ To go deeper:
 ## Latest Articles
 
 <ul class="articles-list">
-{% for post in site.posts limit:5 %}
+{% for post in site.posts limit:10 %}
   <li>
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    <span class="post-meta">{{ post.author }} • {{ post.date | date: "%b %-d" }}</span>
+    <span class="post-meta">{{ post.author }} • updated {{ post.date | date: "%b %-d" }}</span>
     
     <blockquote class="post-excerpt"><em>{{ post.excerpt }}</em></blockquote>
 
@@ -44,7 +54,6 @@ To go deeper:
         <a href="{{ site.baseurl }}/tags/{{ tag | slugify }}/" class="post-tag">
           #{{ tag }}
         </a>
-
       {% endfor %}
     </div>
 
@@ -56,11 +65,16 @@ To go deeper:
   <a href="/articles/" class="view-all-articles">View all articles →</a>
 </div>
 
+---
+
 ## The Closing Charge
-We don’t value boredom because it is dull.  
 
-We choose boredom because it is freedom from **chaos**, freedom from **heroics**, freedom to **build what matters**.  
+You don’t choose boring because it's safe.  
+You choose boring because it **liberates** you.
 
-Boring isn’t the enemy of progress.  
+Freedom from chaos and heroics.  
+Freedom to use engineering time for something better than firefighting.
 
-**Boring is the highest form of discipline.**
+Boring isn’t the enemy of progress.
+
+**Boring is what makes progress possible.**
