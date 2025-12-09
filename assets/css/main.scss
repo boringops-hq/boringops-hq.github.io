@@ -232,6 +232,7 @@ em.reveal {                       /* gets applied via JS */
   border: 1px solid #4a4f55; ;             /* REMOVE BORDER to reduce visual weight */
   border-radius: 2px;
   text-transform: uppercase; /* Use uppercase for tiny text for better distinction */
+  float:right;
 }
 
 /* Ensure hover state is subtle for tags */

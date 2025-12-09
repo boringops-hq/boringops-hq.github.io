@@ -40,7 +40,12 @@ Some will call this stagnation. They are reacting to novelty loss, not recognizi
 {% for post in site.posts limit:10 %}
   <li>
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    <span class="post-meta">{{ post.author }} • updated {{ post.date | date: "%b %-d" }}</span>
+
+    {% unless post.author == "Dan Zrobok" %}
+      <span class="post-meta">{{ post.author }} • updated {{ post.date | date: "%b %-d" }}</span>
+    {% else %}
+      <span class="post-meta">updated {{ post.date | date: "%b %-d" }}</span>
+    {% endunless %}
     
     <blockquote class="post-excerpt">{{ post.excerpt }}</blockquote>
 
