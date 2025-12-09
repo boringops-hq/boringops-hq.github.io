@@ -7,14 +7,14 @@ header:
   overlay_filter: 0.7
   overlay_color: "#000000"
   overlay_image: /assets/images/sensible_header.png
-  caption: "bor·ing (adj.): reliably predictable; free of drama."
+  caption: "Excitement is a symptom. Calm is the cure."
 ---
 
 Every outage has the same origin story: someone, somewhere, got **excited**. Exciting infrastructure is a slot machine. You pull the lever and pray the weekend survives.
 
 Boring infrastructure is the opposite. It’s the quiet machine that does the same thing today, tomorrow, and next quarter. No surprises. No drama. No adrenaline.
 
-**That’s the point.**  This isn’t anti-innovation. It’s anti-chaos. 
+**This isn’t anti-innovation. It’s anti-chaos.** 
 
 BoringOps isn’t minimalism. It’s discipline. It’s the refusal to burn human hours paying for avoidable mistakes and the belief that engineering talent should be building the future, not fixing Thursday.
 
@@ -28,16 +28,13 @@ Heroics are not a badge of honor. They are a confession.
 
 BoringOps doesn’t reduce heroics. **It eliminates the need for them.**
 
-If you’re tired of chaos, you’re in the right place. If you’re addicted to complexity, this philosophy will feel like judgment.
+Complexity addicts will mistake this for stagnation. They're wrong, but they won't stick around to find out.
 
-But good, because it’s meant to.
+### Start Here
 
----
-
-Diving into BoringOps:
-* [**BoringOps: The Efficiency Multiplier**](/articles/boringops_the_efficiency_multiplier/)
-* [**BoringOps vs. DevOps, DevSecOps, and SRE**](/articles/boringops_vs_devops_devsecops_sre/)
-* [**From Chaos to Calm: Maturity is Earned**](/articles/the_six_stages_of_operational_maturity/)
+* [**The Efficiency Multiplier**](/articles/boringops_the_efficiency_multiplier/) - Why freed capacity is the only metric that matters
+* [**BoringOps vs. DevOps, DevSecOps, and SRE**](/articles/boringops_vs_devops_devsecops_sre/) - The counter-movement explained
+* [**From Chaos to Calm: Maturity is Earned**](/articles/the_six_stages_of_operational_maturity/) - From Ignition to Boring
 
 ## Latest Articles
 
@@ -47,7 +44,7 @@ Diving into BoringOps:
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     <span class="post-meta">{{ post.author }} • updated {{ post.date | date: "%b %-d" }}</span>
     
-    <blockquote class="post-excerpt"><em>{{ post.excerpt }}</em></blockquote>
+    <blockquote class="post-excerpt">{{ post.excerpt }}</blockquote>
 
     <div class="article-tags">
       {% for tag in post.tags %}
