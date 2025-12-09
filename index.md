@@ -12,24 +12,19 @@ header:
 
 Every outage has the same origin story: someone, somewhere, got **excited**. Exciting infrastructure is a slot machine. You pull the lever and pray the weekend survives.
 
-Boring infrastructure is the opposite. It’s the quiet machine that does the same thing today, tomorrow, and next quarter. No surprises. No drama. No adrenaline.
+Boring infrastructure is the opposite. It's the quiet machine that does the same thing today, tomorrow, and next quarter. No surprises. No drama. No adrenaline.
 
-**This isn’t anti-innovation. It’s anti-chaos.** 
+**This isn't anti-innovation. It's anti-chaos.** 
 
-BoringOps isn’t minimalism. It’s discipline. It’s the refusal to burn human hours paying for avoidable mistakes and the belief that engineering talent should be building the future, not fixing Thursday.
+BoringOps isn't minimalism. It's discipline. It's the refusal to burn human hours paying for avoidable mistakes and the belief that engineering talent should be building the future, not fixing Thursday.
 
-> **The Law of Excitation**  
->
-> The more exciting a system becomes, the less reliable it is.  
-> The less reliable it is, the more heroics it demands.  
-> The more heroics it demands, the closer the operation drifts to failure.  
+> **The more exciting a system becomes, the faster it fails.**
 
 Heroics are not a badge of honor. They are a confession.
 
-BoringOps doesn’t reduce heroics. **It eliminates the need for them.**
+BoringOps doesn't reduce heroics. **It eliminates the need for them.**
 
 Complexity addicts will mistake this for stagnation. They're wrong, but they won't stick around to find out.
-
 ### Start Here
 
 * [**The Efficiency Multiplier**](/articles/boringops_the_efficiency_multiplier/) - Why freed capacity is the only metric that matters
