@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  width="256"
+  height="256"
+  viewBox="0 0 256 256"
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+>
+
+  <!-- Metronome body -->
+  <path
+    d="M88 224
+       L108 32
+       H148
+       L168 224
+       Z"
+    fill="#FFFFFF"
+  />
+
+  <!-- Base feet -->
+  <rect x="92" y="224" width="28" height="8" rx="2" fill="#FFFFFF"/>
+  <rect x="136" y="224" width="28" height="8" rx="2" fill="#FFFFFF"/>
+
+  <!-- Tick marks -->
+  <g stroke="#2F3437" stroke-width="4" stroke-linecap="round" opacity="0.8">
+    <line x1="128" y1="64" x2="128" y2="64"/>
+    <line x1="128" y1="84" x2="128" y2="84"/>
+    <line x1="128" y1="104" x2="128" y2="104"/>
+    <line x1="128" y1="124" x2="128" y2="124"/>
+    <line x1="128" y1="144" x2="128" y2="144"/>
+  </g>
+
+  <!-- Pendulum arm -->
+  <line
+    x1="128"
+    y1="172"
+    x2="168"
+    y2="96"
+    stroke="#2F3437"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+
+  <!-- Pendulum bob -->
+  <circle
+    cx="128"
+    cy="172"
+    r="10"
+    fill="#2F3437"
+  />
+
+</svg>

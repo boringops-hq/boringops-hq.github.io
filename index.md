@@ -10,15 +10,15 @@ header:
   caption: "Excitement is a symptom. Calm is the cure."
 ---
 
-Every outage has the same origin story: someone got **excited**. 
+Every outage has the same origin story: the system got **exciting**. 
 
 Exciting infrastructure behaves like a slot machine. You pull the lever and wait to see if the weekend survives.
 
-Boring infrastructure is the opposite. It is the machine that behaves the same today, tomorrow, and next quarter. No surprises, drama, nor adrenaline.
+Boring infrastructure is the opposite. It is the machine that behaves the same today, tomorrow, and next quarter.  No surprises. No drama. No adrenaline.
 
 This is not opposition to innovation. It is opposition to chaos. 
 
-BoringOps is discipline. It is the refusal to burn human hours on avoidable mistakes. It is the belief that engineering talent focus on the future instead of repairing Thursday.
+BoringOps is discipline. It exists to stop engineering time from being consumed by avoidable failures.
 
 > **The more exciting a system becomes, the faster it fails.**
 
@@ -26,11 +26,12 @@ Heroics are not a badge of honor. They are a confession.
 
 BoringOps does not reduce heroics. It eliminates the need for them.
 
-Some will call this stagnation. They are reacting to novelty loss, not recognizing stability.
+Some will call this stagnation. They are mistaking novelty for progress.
 
 ### Start Here
 
-* [**The Efficiency Multiplier**](/articles/boringops_the_efficiency_multiplier/): What teams gain when chaos stops burning their time
+* [**The Pillars**](/pillars/): The 9 constraints that prevent systems from drifting into chaos
+* [**The Efficiency Multiplier**](/articles/boringops_the_efficiency_multiplier/): What teams gain when chaos stops burning time
 * [**BoringOps vs. DevOps, DevSecOps, and SRE**](/articles/boringops_vs_devops_devsecops_sre/): A simple map of where each practice belongs
 * [**From Chaos to Calm: Maturity is Earned**](/articles/the_six_stages_of_operational_maturity/): A practical view of how systems grow predictable
 

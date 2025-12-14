@@ -1,5 +1,5 @@
 ---
-title: "The 8.5 Pillars of BoringOps"
+title: "The 9 Pillars of BoringOps"
 description: Shiny dulls. Boring endures.
 layout: splash
 permalink: /pillars/
@@ -17,7 +17,7 @@ Modern engineering worships the wrong things: heroics, drama, and the compulsive
 
 BoringOps is the practice of building systems that behave the same way every day, in every condition. It is the discipline of removing chaos allowing teams to focus on the work that moves the **business** forward.
 
-We operate through:
+The practice rests on:
 
 * **Mindset:** Preferring predictability, trust, and clarity over hype.  
 * **Discipline:** Enforcing consistency, standards, and stewardship.  
@@ -25,7 +25,7 @@ We operate through:
 
 Infra is not supposed to be exciting. Excitement means outages, drama, and late-night heroics. Boring means **predictable**. Boring means **stable**.
 
-This doctrine is formalized in the 8.5 Pillars of BoringOps:
+This doctrine is formalized in the 9 Pillars of BoringOps:
 
 {% include MANIFESTO.md %}
 
@@ -34,7 +34,7 @@ This doctrine is formalized in the 8.5 Pillars of BoringOps:
 - Incidents are rare, uneventful, and easy to explain.  
 - New hires ship within days, not months.  
 - Scaling never triggers panic.  
-- Finance complains about your bill less.  
+- Finance forgets to ask about your budget.
 - Customers never think about infrastructure.  
 - You forget it is there until you need it, and it works.
 
