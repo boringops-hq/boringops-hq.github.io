@@ -41,6 +41,7 @@ This doctrine is formalized in the 9 Pillars of BoringOps:
 ## The Closing Charge
 
 Boring is not a compromise or a drag on progress.  
+
 It is what allows teams to build without fear, move without friction, and deliver without chaos.
 
 **Boring is the silent engine of growth.**
