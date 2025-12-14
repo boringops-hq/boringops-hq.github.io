@@ -10,23 +10,21 @@ header:
   caption: "Excitement is a symptom. Calm is the cure."
 ---
 
-Every outage has the same origin story: the system got **exciting**. 
+Every outage starts the same way. The system got **exciting**.
 
-Exciting infrastructure behaves like a slot machine. You pull the lever and wait to see if the weekend survives.
+Exciting infrastructure behaves like a slot machine. You pull the lever and wait to see whether the weekend survives.
 
-Boring infrastructure is the opposite. It is the machine that behaves the same today, tomorrow, and next quarter.  No surprises. No drama. No adrenaline.
-
-This is not opposition to innovation. It is opposition to chaos. 
-
-BoringOps is discipline. It exists to stop engineering time from being consumed by avoidable failures.
+Boring infrastructure does not do that. No surprises. No drama. No adrenaline.
 
 > **The more exciting a system becomes, the faster it fails.**
 
-Heroics are not a badge of honor. They are a confession.
+BoringOps exists in opposition to chaos.
+
+<!-- Heroics are not a badge of honor. They are a confession.
 
 BoringOps does not reduce heroics. It eliminates the need for them.
 
-Some will call this stagnation. They are mistaking novelty for progress.
+Some will call this stagnation. They are mistaking novelty for progress. -->
 
 ### Start Here
 
