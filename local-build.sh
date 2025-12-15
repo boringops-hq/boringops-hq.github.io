@@ -36,7 +36,7 @@ for article in "$ARTICLES_DIR/articles/"*.md; do
 done
 
 # Create symlinks for articles
-for article in "$DRAFTS_DIR/articles/"*.md; do
+for article in "$DRAFTS_DIR/sh/articles/"*.md; do
   [ -f "$article" ] && ln -s "$article" "$SITE_DIR/_posts/$(basename "$article")"
 done
 
