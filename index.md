@@ -7,7 +7,7 @@ header:
   overlay_filter: 0.7
   overlay_color: "#000000"
   overlay_image: /assets/images/sensible_header.png
-  caption: "Excitement is a symptom. Calm is the cure."
+  caption: "bor·ing (adj.) — reliably predictable; free of drama."
 ---
 
 Every outage starts the same way. The system got **exciting**.
@@ -64,12 +64,12 @@ Some will call this stagnation. They are mistaking novelty for progress. -->
   <a href="/articles/" class="view-all-articles">View all articles →</a>
 </div>
 
----
-
 ## The Closing Charge
 
 The point of boring is freedom.  
-Freedom from chaos and weekend heroics.  
+
+Freedom from chaos and weekend heroics. 
+
 Freedom to use engineering time on work that moves a system forward.
 
 Boring isn’t an enemy of progress.

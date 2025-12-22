@@ -19,9 +19,9 @@ BoringOps is the practice of building systems that behave the same way every day
 
 The practice rests on:
 
-* **Mindset:** Preferring predictability, trust, and clarity over hype.  
-* **Discipline:** Enforcing consistency, standards, and stewardship.  
-* **Principle:** Knowing that innovation thrives only on a stable foundation.
+**Mindset:** Preferring predictability, trust, and clarity over hype.  
+**Discipline:** Enforcing consistency, standards, and stewardship.  
+**Principle:** Knowing that innovation thrives only on a stable foundation.
 
 Infra is not supposed to be exciting. Excitement means outages, drama, and late-night heroics. Boring means **predictable**. Boring means **stable**.
 
