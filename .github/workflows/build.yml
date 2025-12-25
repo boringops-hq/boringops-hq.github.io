@@ -32,11 +32,13 @@ jobs:
           repository: boringops-hq/boringops-manifesto
           path: manifesto
 
-      - name: Checkout articles repo
+      - name: Checkout articles repos
         uses: actions/checkout@v4
         with:
           repository: boringops-hq/boringops-articles
+          token: ${{ secrets.ARTICLES_REPO_TOKEN }}
           path: articles
+
           
       - name: Copy manifesto into site
         run: cp manifesto/MANIFESTO.md site/_includes/MANIFESTO.md
