@@ -88,8 +88,9 @@ else
     --disable-sync \
     --disable-features=Crashpad,ChromeWhatsNewUI \
     --disable-application-cache \
-    --disk-cache-size=1 \
-    --media-cache-size=1 \
+    --aggressive-cache-discard \
+    --disk-cache-size=0 \
+    --media-cache-size=0 \
     http://localhost:4000 &
     
   echo "Development Chrome not detected. Launched new, isolated window at http://localhost:4000"

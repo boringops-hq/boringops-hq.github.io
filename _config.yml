@@ -1,13 +1,18 @@
-title: BoringOps 
+title: ./BoringOps.sh
 subtitle: Shiny dulls. Boring endures.
+description: "BoringOps is the discipline of building infrastructure that behaves predictably. No drama. No heroics. Just systems that work."
 url: "https://boringops.sh"
-theme: minimal-mistakes-jekyll
-minimal_mistakes_skin:  dark
+author: BoringOps
+twitter:
+  username: boringops
+social:
+  name: BoringOps
+  links:
+    - https://github.com/boringops-hq
+
 plugins:
-  - jekyll-include-cache
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-archives
 
 sass:
   style: compressed
@@ -15,53 +20,12 @@ sass:
 defaults:
   - scope:
       path: ""
-    values:
-      layout: single
-      share: true
-
-  - scope:
-      path: ""
       type: posts
     values:
       layout: single
-      show_excerpts: true
-      author_profile: false
-      share: true
       permalink: /articles/:title/
 
-
-# Configuration for jekyll-archives
-jekyll-archives:
-  enabled:
-    - tags # Tells the plugin to generate pages for tags
-  layout: tag_archive # Name of the layout file you will create
-  permalinks:
-    tag: '/tags/:name/' # Defines the URL structure (e.g., /tags/consistency/)
-
-# Navigation
-navigation:
-  main: main
-seo:
-  type: "website"
-
-header:
-  nav:
-    enable: true
-  sticky: true
-
-footer:
-  content: "© 2025 BoringOps. This space intentionally left boring."
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/boringops-hq/boringops-manifesto"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope"
-      url: "mailto:hello@boringops.sh"
-
-comments:
-  share: 
-    - twitter
-    - linkedin
-    - bluesky
-
+collections:
+  posts:
+    output: true
+    permalink: /articles/:title/

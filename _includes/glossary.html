@@ -1,0 +1,73 @@
+<script>
+(function() {
+  const glossary = [
+    {% for item in site.data.glossary %}
+    { term: "{{ item.term }}", definition: "{{ item.definition }}" }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+
+  // Sort by term length (longest first) to match longer phrases before shorter ones
+  glossary.sort((a, b) => b.term.length - a.term.length);
+
+  function annotateGlossaryTerms() {
+    const contentAreas = document.querySelectorAll('.post-content, .intro, .closing, .pillars-intro');
+    const annotatedTerms = new Set(); // Track terms already annotated on this page
+
+    contentAreas.forEach(area => {
+      glossary.forEach(item => {
+        // Skip if this term was already annotated on this page
+        if (annotatedTerms.has(item.term.toLowerCase())) return;
+
+        const regex = new RegExp(`\\b(${item.term})\\b`, 'gi');
+        const walker = document.createTreeWalker(area, NodeFilter.SHOW_TEXT, null, false);
+        let foundNode = null;
+
+        while (walker.nextNode()) {
+          if (walker.currentNode.parentElement.closest('.glossary-term')) continue;
+          if (walker.currentNode.parentElement.tagName === 'SCRIPT') continue;
+          if (walker.currentNode.parentElement.tagName === 'STYLE') continue;
+          if (regex.test(walker.currentNode.textContent)) {
+            foundNode = walker.currentNode;
+            break; // Only need first occurrence
+          }
+          regex.lastIndex = 0;
+        }
+
+        if (!foundNode) return;
+
+        const text = foundNode.textContent;
+        regex.lastIndex = 0;
+        const match = text.match(regex);
+        if (!match) return;
+
+        const firstMatch = match[0];
+        const index = text.toLowerCase().indexOf(firstMatch.toLowerCase());
+        if (index === -1) return;
+
+        const before = text.substring(0, index);
+        const matchText = text.substring(index, index + firstMatch.length);
+        const after = text.substring(index + firstMatch.length);
+
+        const span = document.createElement('span');
+        span.className = 'glossary-term';
+        span.setAttribute('data-definition', item.definition);
+        span.textContent = matchText;
+
+        const fragment = document.createDocumentFragment();
+        if (before) fragment.appendChild(document.createTextNode(before));
+        fragment.appendChild(span);
+        if (after) fragment.appendChild(document.createTextNode(after));
+
+        foundNode.parentNode.replaceChild(fragment, foundNode);
+        annotatedTerms.add(item.term.toLowerCase()); // Mark as annotated
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', annotateGlossaryTerms);
+  } else {
+    annotateGlossaryTerms();
+  }
+})();
+</script>

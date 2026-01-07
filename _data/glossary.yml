@@ -1,0 +1,14 @@
+# BoringOps Glossary
+# Terms defined here will automatically get tooltips across the site
+
+- term: "chaos"
+  definition: "The natural state of unmaintained systems; what happens when 'exciting' decisions compound"
+
+- term: "shiny object"
+  definition: "A new technology adopted for novelty rather than genuine need; often increases operational complexity"
+
+- term: "operational maturity"
+  definition: "The degree to which an organization's systems are predictable, documented, and self-maintaining"
+
+- term: "the nine pillars"
+  definition: "The core constraints of BoringOps: Consistency, Simplicity, Resilience, Maintainability, Transparency, Longevity, Standards, Trust, and Stewardship"

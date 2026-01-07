@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<header class="site-header">
+  <nav class="site-nav">
+    <a href="/" class="site-title"><span class="site-title-prefix">./</span>BoringOps.sh</a>
+    <span class="site-tagline">{{ site.subtitle }}</span>
+    <div class="nav-links">
+      <a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
+      <a href="/pillars/" class="nav-link {% if page.url == '/pillars/' %}active{% endif %}">Pillars</a>
+      <a href="/articles/" class="nav-link {% if page.url == '/articles/' %}active{% endif %}">Articles</a>
+    </div>
+  </nav>
+</header>
+
+<main class="site-main">
+  {{ content }}
+</main>
+
+<footer class="site-footer">
+  <p class="footer-cta">Tired of excitement? <a href="https://boringops.run">Let's start with a chaos assessment.</a></p>
+  <div class="footer-links">
+    <a href="https://github.com/boringops-hq/boringops-manifesto">GitHub</a>
+    <a href="mailto:hello@boringops.sh">Email</a>
+  </div>
+  <p class="copyright">&copy; 2026 BoringOps. This space intentionally left boring.</p>
+  <div class="keyboard-hints">
+    <kbd>P</kbd> Pillars
+    <kbd>A</kbd> Articles
+    <kbd>H</kbd> Home
+  </div>
+</footer>
+
+<script>
+document.addEventListener('keydown', (e) => {
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  if (e.key === 'p' || e.key === 'P') window.location.href = '/pillars/';
+  if (e.key === 'a' || e.key === 'A') window.location.href = '/articles/';
+  if (e.key === 'h' || e.key === 'H') window.location.href = '/';
+});
+</script>
